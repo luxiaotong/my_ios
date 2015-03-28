@@ -1,4 +1,4 @@
 # my_ios
 iOS Project including object-c and swift
 
-test commit
+These are all my learning project
