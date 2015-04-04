@@ -10,12 +10,25 @@
 
 @implementation LearnPerson
 
-- (void)sayHello {
-    NSLog(@"I'm Shannon Lu.");
++ (LearnPerson *) person {
+    return [[self alloc] init];
+}
+
+- (void) sayHello {
+    [self saySomething:@"Hi, I'm Shannon Lu."];
+}
+
+- (void) sayNight {
+    [self saySomething:@"Good night, Shannon."];
+}
+
+- (void) saySomething:(NSString *)word {
+    NSLog(@"%@", word);
 }
 
 - (void) sayHello1:(int)param1 Param2:(int)param2 Param3:(int)param3 {
     NSLog(@"I'm Shannon Lu. %d %d %d", param1, param2, param3);
 }
+
 
 @end

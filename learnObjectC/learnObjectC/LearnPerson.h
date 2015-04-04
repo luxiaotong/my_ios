@@ -15,7 +15,9 @@
 @property NSDate   *dateOfBirth;
 
 - (void) sayHello;
+- (void) sayNight;
+- (void) saySomething:(NSString *)word;
 - (void) sayHello1:(int)param1 Param2:(int)param2 Param3:(int)param3;
-+ (void) person;
++ (LearnPerson *) person;
 
 @end
