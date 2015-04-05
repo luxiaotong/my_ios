@@ -10,14 +10,17 @@
 
 @interface LearnPerson : NSObject
 
-@property NSString *firstName;
-@property NSString *lastName;
+@property (copy) NSString *firstName;
+@property (copy) NSString *lastName;
 @property NSDate   *dateOfBirth;
 
++ (id) person;
+- (id) init;
+- (LearnPerson *) initWithFirstName:(NSString *)firstName lastName:(NSString *) lastName;
 - (void) sayHello;
 - (void) sayNight;
 - (void) saySomething:(NSString *)word;
 - (void) sayHello1:(int)param1 Param2:(int)param2 Param3:(int)param3;
-+ (LearnPerson *) person;
+- (void) dealloc;
 
 @end

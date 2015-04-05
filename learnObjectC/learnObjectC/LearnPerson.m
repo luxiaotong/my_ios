@@ -10,12 +10,27 @@
 
 @implementation LearnPerson
 
-+ (LearnPerson *) person {
++ (id) person {
     return [[self alloc] init];
 }
 
+- (id) init {
+    return [self initWithFirstName:@"Shannonaaaa" lastName:@"Lu"];
+}
+
+- (LearnPerson *) initWithFirstName:(NSString *)firstName lastName:(NSString *) lastName {
+    self = [super init];
+    if ( self ) {
+        _firstName = firstName;
+        _lastName  = lastName;
+    }
+    
+    return self;
+}
+
 - (void) sayHello {
-    [self saySomething:@"Hi, I'm Shannon Lu."];
+    NSString *word = [NSString stringWithFormat:@"Hi, I'm %@ %@", self.firstName, self.lastName];
+    [self saySomething:word];
 }
 
 - (void) sayNight {
@@ -30,5 +45,8 @@
     NSLog(@"I'm Shannon Lu. %d %d %d", param1, param2, param3);
 }
 
+- (void)dealloc {
+    NSLog(@"LearnPerson is being deallocated");
+}
 
 @end

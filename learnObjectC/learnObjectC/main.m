@@ -15,25 +15,46 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         
         LearnPerson *lpObj = [LearnPerson person];
-        [lpObj sayHello];
-        [lpObj sayNight];
-        [lpObj sayHello1:1 Param2:2 Param3:3];
         
-        LearnShoutingPerson *lspObj = [LearnShoutingPerson new];
-        [lspObj sayHello];
-        [lspObj sayNight];
         
-        LearnPerson *lpObjNil;
-        if ( lpObjNil == nil ) {
-            NSLog(@"lpObjNil is nil");
+//        LearnPerson *strongLPObj = lpObj;
+        LearnPerson * __weak weakLPObj= lpObj;
+        lpObj = nil;
+//        [lpObj sayHello];
+//        lpObj = nil;
+//        [weakLPObj sayHello];
+        if ( lpObj ) {
+            NSLog(@"y");
         } else {
-            NSLog(@"lpObjNil is not nil");
+            NSLog(@"n");
         }
-        if ( lpObj == nil ) {
-            NSLog(@"lpObj is nil");
-        } else {
-            NSLog(@"lpObj is not nil");
-        }
+//        [strongLPObj sayHello];
+        
+        
+
+//        [lpObj sayHello];
+//        NSMutableString *appendName = [NSMutableString stringWithString:@"iiiiii"];
+//        lpObj.firstName = appendName;
+//        [appendName appendString:@"qqqqqq"];
+//        [lpObj sayHello];
+//        [lpObj sayNight];
+//        [lpObj sayHello1:1 Param2:2 Param3:3];
+//        
+//        LearnShoutingPerson *lspObj = [LearnShoutingPerson new];
+//        [lspObj sayHello];
+//        [lspObj sayNight];
+        
+//        LearnPerson *lpObjNil;
+//        if ( lpObjNil == nil ) {
+//            NSLog(@"lpObjNil is nil");
+//        } else {
+//            NSLog(@"lpObjNil is not nil");
+//        }
+//        if ( lpObj == nil ) {
+//            NSLog(@"lpObj is nil");
+//        } else {
+//            NSLog(@"lpObj is not nil");
+//        }
     }
     return 0;
 }
