@@ -7,27 +7,34 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LearnPerson.h"
-#import "LearnShoutingPerson.h"
+//#import "LearnPerson.h"
+//#import "LearnShoutingPerson.h"
+#import "LearnPerson+LearnPersonCategory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         
         LearnPerson *lpObj = [LearnPerson person];
+        [lpObj displayPersonName];
+        [lpObj sayNight];
         
+        [lpObj measureHeight:(NSInteger *)170];
+        [lpObj measureWeight:(NSInteger *)120];
+
+        NSLog(@"height: %d; weight: %d", (int)lpObj.height, (int)lpObj.weight);
         
 //        LearnPerson *strongLPObj = lpObj;
-        LearnPerson * __weak weakLPObj= lpObj;
-        lpObj = nil;
+//        LearnPerson * __weak weakLPObj= lpObj;
+//        lpObj = nil;
 //        [lpObj sayHello];
 //        lpObj = nil;
 //        [weakLPObj sayHello];
-        if ( lpObj ) {
-            NSLog(@"y");
-        } else {
-            NSLog(@"n");
-        }
+//        if ( lpObj ) {
+//            NSLog(@"y");
+//        } else {
+//            NSLog(@"n");
+//        }
 //        [strongLPObj sayHello];
         
         

@@ -8,6 +8,14 @@
 
 #import "LearnPerson.h"
 
+@interface LearnPerson ()
+
+@property NSInteger *height;
+@property NSInteger *weight;
+
+@end
+
+
 @implementation LearnPerson
 
 + (id) person {
@@ -48,5 +56,14 @@
 - (void)dealloc {
     NSLog(@"LearnPerson is being deallocated");
 }
+
+- (void) measureHeight:(NSInteger *)height {
+    self.height = height;
+}
+
+- (void) measureWeight:(NSInteger *)weight {
+    self.weight = weight;
+}
+
 
 @end
