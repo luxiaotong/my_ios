@@ -22,7 +22,6 @@ int main(int argc, const char * argv[]) {
         [lpObj measureHeight:(NSInteger *)170];
         [lpObj measureWeight:(NSInteger *)120];
 
-        NSLog(@"height: %d; weight: %d", (int)lpObj.height, (int)lpObj.weight);
         
 //        LearnPerson *strongLPObj = lpObj;
 //        LearnPerson * __weak weakLPObj= lpObj;
