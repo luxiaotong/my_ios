@@ -10,4 +10,6 @@
 
 @interface CalculatorBrain : NSObject
 
+- (int)operationPlusWithFirstNumber:(NSNumber *)firstNumber;
+
 @end

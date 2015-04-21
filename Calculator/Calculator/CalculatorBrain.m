@@ -8,6 +8,29 @@
 
 #import "CalculatorBrain.h"
 
+@interface CalculatorBrain ()
+
+@property NSNumber *firstNumber;
+@property NSNumber *secondNumber;
+@property NSString *aOperator;
+
+@end
+
 @implementation CalculatorBrain
+
+- (int)operationPlusWithFirstNumber:(NSNumber *)firstNumber
+{
+    int resultNumber;
+    
+    if ( self.firstNumber == nil ) {
+        self.firstNumber = firstNumber;
+        resultNumber = 0;
+    } else {
+        resultNumber = self.firstNumber.intValue + firstNumber.intValue;
+    }
+    
+    return resultNumber;
+    
+}
 
 @end
