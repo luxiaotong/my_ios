@@ -10,27 +10,47 @@
 
 @interface CalculatorBrain ()
 
-@property NSNumber *firstNumber;
-@property NSNumber *secondNumber;
-@property NSString *aOperator;
+@property NSMutableArray *numberArray;
+@property NSMutableArray *operatorArray;
 
 @end
 
 @implementation CalculatorBrain
 
-- (int)operationPlusWithFirstNumber:(NSNumber *)firstNumber
-{
-    int resultNumber;
+- (CalculatorBrain *) init {
+    CalculatorBrain *CBObj = [super init];
     
-    if ( self.firstNumber == nil ) {
-        self.firstNumber = firstNumber;
-        resultNumber = 0;
-    } else {
-        resultNumber = self.firstNumber.intValue + firstNumber.intValue;
+    if ( CBObj != nil ) {
+        self.numberArray   = [NSMutableArray array];
+        self.operatorArray = [NSMutableArray array];
     }
     
-    return resultNumber;
+    return CBObj;
+}
+
+- (void) fillBrainWithNumber:(NSNumber *)number {
+    [self.numberArray addObject:number];
+}
+
+- (void) fillBrainWithOperators:(NSString *)operators {
+    [self.operatorArray addObject:operators];
+}
+
+- (NSNumber *) operationWithBrain {
     
+    NSNumber *resultFromBrain = @0;
+    
+    if ( self.operatorArray.count > 0 && self.numberArray.count > 1 ) {
+        NSNumber *aNumber = self.numberArray.lastObject;
+        [self.numberArray removeLastObject];
+        
+        NSNumber *bNumber = self.numberArray.lastObject;
+        [self.numberArray removeLastObject];
+        
+        resultFromBrain = [NSNumber numberWithInt:(aNumber.intValue + bNumber.intValue)];
+    }
+    
+    return resultFromBrain;
 }
 
 @end

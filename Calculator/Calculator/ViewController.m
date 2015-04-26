@@ -7,15 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "CalculatorBrain.h"
 
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *resultNumber;
 @property NSMutableString *number;
 @property BOOL isEnteringNumber;
+@property CalculatorBrain *calcuBrainObj;
 
-@property NSNumber *firstNumber;
-@property NSNumber *secondNumber;
-@property NSString *aOperator;
 @end
 
 @implementation ViewController
@@ -23,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.calcuBrainObj = [CalculatorBrain new];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,32 +34,34 @@
 
 - (IBAction)inputNumber:(UIButton *)sender {
     
-    if ( self.resultNumber != nil ) {
+    if ( self.isEnteringNumber ) {
         self.number = (NSMutableString *) self.resultNumber.text;
         self.resultNumber.text = [self.number stringByAppendingString:sender.currentTitle];
     } else {
-        self.resultNumber.text = [self.number initWithString:sender.currentTitle];
+        //self.resultNumber.text = [self.number initWithString:sender.currentTitle];
+        self.resultNumber.text = sender.currentTitle;
+        self.isEnteringNumber = YES;
     }
     
 }
 - (IBAction)operateNumber:(UIButton *)sender {
-    NSString *operator = sender.currentTitle;
+    NSString *operators = sender.currentTitle;
     
-    /*
-    if ( [operator isEqual: @"+"] ) {
-        if ( self.firstNumber == nil ) {
-            self.firstNumber = [NSNumber numberWithInt:self.resultNumber.text.intValue];
-        } else {
-            int tmpNumber = self.firstNumber.intValue + self.resultNumber.text.intValue;
-            self.resultNumber.text = [NSString stringWithFormat:@"%d", tmpNumber];
-            self.firstNumber = nil;
-        }
+    NSNumber *currentScreenNumber = [NSNumber numberWithInteger: [self.resultNumber.text integerValue]];
+    [self.calcuBrainObj fillBrainWithNumber:currentScreenNumber];
+    [self.calcuBrainObj fillBrainWithOperators:operators];
+    
+    NSNumber *numberFromBrain = [self.calcuBrainObj operationWithBrain];
+    if ( numberFromBrain.intValue != 0 ) {
+        self.resultNumber.text = [numberFromBrain stringValue];
     }
-     */
+    
+    self.isEnteringNumber = NO;
 }
 
 - (IBAction)clearNumber:(UIButton *)sender {
     self.resultNumber.text = @"0";
+    self.isEnteringNumber = NO;
 }
 
 

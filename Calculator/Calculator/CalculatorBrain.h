@@ -10,6 +10,8 @@
 
 @interface CalculatorBrain : NSObject
 
-- (int)operationPlusWithFirstNumber:(NSNumber *)firstNumber;
+- (void) fillBrainWithNumber:(NSNumber *)number;
+- (void) fillBrainWithOperators:(NSString *)operators;
+- (NSNumber *) operationWithBrain;
 
 @end
