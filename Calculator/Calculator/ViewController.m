@@ -62,6 +62,8 @@
 - (IBAction)clearNumber:(UIButton *)sender {
     self.resultNumber.text = @"0";
     self.isEnteringNumber = NO;
+    
+    [self.calcuBrainObj clearBrain];
 }
 
 

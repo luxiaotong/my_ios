@@ -13,5 +13,6 @@
 - (void) fillBrainWithNumber:(NSNumber *)number;
 - (void) fillBrainWithOperators:(NSString *)operators;
 - (NSNumber *) operationWithBrain;
+- (void) clearBrain;
 
 @end

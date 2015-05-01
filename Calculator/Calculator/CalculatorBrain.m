@@ -40,17 +40,42 @@
     
     NSNumber *resultFromBrain = @0;
     
-    if ( self.operatorArray.count > 0 && self.numberArray.count > 1 ) {
+    if ( self.operatorArray.count > 1 && self.numberArray.count > 1 ) {
         NSNumber *aNumber = self.numberArray.lastObject;
         [self.numberArray removeLastObject];
         
         NSNumber *bNumber = self.numberArray.lastObject;
         [self.numberArray removeLastObject];
         
-        resultFromBrain = [NSNumber numberWithInt:(aNumber.intValue + bNumber.intValue)];
+        NSString *cOperator = self.operatorArray.lastObject;
+        [self.operatorArray removeLastObject];
+        
+        NSString *dOperator = self.operatorArray.lastObject;
+        [self.operatorArray removeLastObject];
+
+        
+        if ( [dOperator isEqualToString:@"+"] ) {
+            resultFromBrain = [NSNumber numberWithInt:(aNumber.intValue + bNumber.intValue)];
+        } else if ( [dOperator isEqualToString:@"-"] ) {
+            resultFromBrain = [NSNumber numberWithInt:(bNumber.intValue - aNumber.intValue)];
+        } else if ( [dOperator isEqualToString:@"*"] ) {
+            resultFromBrain = [NSNumber numberWithInt:(aNumber.intValue * bNumber.intValue)];
+        } else if ( [dOperator isEqualToString:@"/"] ) {
+            resultFromBrain = [NSNumber numberWithInt:(bNumber.intValue / aNumber.intValue)];
+        }
+
+        if ( ! [cOperator isEqualToString:@"="] ) {
+            [self.numberArray addObject:resultFromBrain];
+            [self.operatorArray addObject:cOperator];
+        }
     }
     
     return resultFromBrain;
+}
+
+- (void) clearBrain {
+    [self.numberArray removeAllObjects];
+    [self.operatorArray removeAllObjects];
 }
 
 @end
