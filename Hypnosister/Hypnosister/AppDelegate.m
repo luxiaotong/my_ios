@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  Vitamin
+//  Hypnosister
 //
-//  Created by 逯晓瞳 on 15/5/2.
+//  Created by 逯晓瞳 on 15/5/10.
 //  Copyright (c) 2015年 逯晓瞳. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "BNRHypnosistView.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    CGRect firstFrame = self.window.bounds;
+    BNRHypnosistView *firstView = [[BNRHypnosistView alloc] initWithFrame:firstFrame];
+    //firstView.backgroundColor = [UIColor redColor];
+    [self.window addSubview:firstView];
+    
+    /*
+    CGRect secondFrame = CGRectMake(20, 30, 50, 50);
+    BNRHypnosistView *secondView = [[BNRHypnosistView alloc] initWithFrame:secondFrame];
+    secondView.backgroundColor = [UIColor blueColor];
+    [firstView addSubview:secondView];
+     */
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

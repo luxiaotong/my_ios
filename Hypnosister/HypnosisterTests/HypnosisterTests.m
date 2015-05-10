@@ -1,19 +1,19 @@
 //
-//  VitaminTests.m
-//  VitaminTests
+//  HypnosisterTests.m
+//  HypnosisterTests
 //
-//  Created by 逯晓瞳 on 15/5/2.
+//  Created by 逯晓瞳 on 15/5/10.
 //  Copyright (c) 2015年 逯晓瞳. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface VitaminTests : XCTestCase
+@interface HypnosisterTests : XCTestCase
 
 @end
 
-@implementation VitaminTests
+@implementation HypnosisterTests
 
 - (void)setUp {
     [super setUp];
