@@ -38,7 +38,7 @@
     
     for (BNRItem *item in self.subitems) {
         totalValue += item.valueInDollars;
-        subitemsResult = [subitemsResult stringByAppendingString:[NSString stringWithFormat:@"name:%@, value:%d\n", item.itemName, item.valueInDollars]];
+        subitemsResult = (NSMutableString *) [subitemsResult stringByAppendingFormat:@"name:%@, value:%d\n", item.itemName, item.valueInDollars];
     }
     
     return [subitemsResult stringByAppendingString:[NSString stringWithFormat:@"total value:%d\n", totalValue]];
