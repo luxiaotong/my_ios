@@ -21,11 +21,24 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    CGRect scrollFrame = self.window.bounds;
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollFrame];
+    scrollView.pagingEnabled = YES;
+    [self.window addSubview:scrollView];
+    
+    
     //CGRect firstFrame = CGRectMake(160, 240, 100, 150);
     CGRect firstFrame = self.window.bounds;
+    //firstFrame.size.width  *= 2;
+    //firstFrame.size.height *= 2;
     BNRHypnosistView *firstView = [[BNRHypnosistView alloc] initWithFrame:firstFrame];
     //firstView.backgroundColor = [UIColor redColor];
-    [self.window addSubview:firstView];
+    [scrollView addSubview:firstView];
+    
+    CGRect secondFrame = firstFrame;
+    secondFrame.origin.x += secondFrame.size.width;
+    BNRHypnosistView *secondView = [[BNRHypnosistView alloc] initWithFrame:secondFrame];
+    [scrollView addSubview:secondView];
     
     /*
     CGRect secondFrame = CGRectMake(20, 30, 50, 50);
@@ -33,6 +46,9 @@
     secondView.backgroundColor = [UIColor blueColor];
     [firstView addSubview:secondView];
      */
+    
+    scrollFrame.size.width *= 2;
+    scrollView.contentSize = scrollFrame.size;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
