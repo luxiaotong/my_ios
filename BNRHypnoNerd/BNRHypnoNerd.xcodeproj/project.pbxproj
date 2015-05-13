@@ -23,6 +23,8 @@
 		B4FC97591B0351A000AA87F2 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FC97551B0351A000AA87F2 /* Hypno@2x.png */; };
 		B4FC975A1B0351A000AA87F2 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FC97561B0351A000AA87F2 /* Time.png */; };
 		B4FC975B1B0351A000AA87F2 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FC97571B0351A000AA87F2 /* Time@2x.png */; };
+		B4FC975F1B03A92500AA87F2 /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC975D1B03A92500AA87F2 /* BNRQuizViewController.m */; };
+		B4FC97601B03A92500AA87F2 /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4FC975E1B03A92500AA87F2 /* BNRQuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		B4FC97551B0351A000AA87F2 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
 		B4FC97561B0351A000AA87F2 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
 		B4FC97571B0351A000AA87F2 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		B4FC975C1B03A92500AA87F2 /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		B4FC975D1B03A92500AA87F2 /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		B4FC975E1B03A92500AA87F2 /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +107,17 @@
 		B402CE321B00F30A00DEB1F8 /* BNRHypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
-				B4D9950F1B024FA10021CCFB /* BNRReminderViewController.h */,
-				B4D995101B024FA10021CCFB /* BNRReminderViewController.m */,
-				B4D995121B02511E0021CCFB /* BNRReminderViewController.xib */,
-				B402CE371B00F30A00DEB1F8 /* AppDelegate.h */,
-				B402CE381B00F30A00DEB1F8 /* AppDelegate.m */,
 				B402CE5C1B00F46700DEB1F8 /* BNRHypnosisViewController.h */,
 				B402CE5D1B00F46700DEB1F8 /* BNRHypnosisViewController.m */,
 				B402CE5E1B00F46700DEB1F8 /* BNRHypnosisViewController.xib */,
+				B4D9950F1B024FA10021CCFB /* BNRReminderViewController.h */,
+				B4D995101B024FA10021CCFB /* BNRReminderViewController.m */,
+				B4D995121B02511E0021CCFB /* BNRReminderViewController.xib */,
+				B4FC975C1B03A92500AA87F2 /* BNRQuizViewController.h */,
+				B4FC975D1B03A92500AA87F2 /* BNRQuizViewController.m */,
+				B4FC975E1B03A92500AA87F2 /* BNRQuizViewController.xib */,
+				B402CE371B00F30A00DEB1F8 /* AppDelegate.h */,
+				B402CE381B00F30A00DEB1F8 /* AppDelegate.m */,
 				B402CE3A1B00F30A00DEB1F8 /* ViewController.h */,
 				B402CE3B1B00F30A00DEB1F8 /* ViewController.m */,
 				B402CE3D1B00F30A00DEB1F8 /* Main.storyboard */,
@@ -236,6 +244,7 @@
 				B4FC975B1B0351A000AA87F2 /* Time@2x.png in Resources */,
 				B402CE3F1B00F30A00DEB1F8 /* Main.storyboard in Resources */,
 				B4FC975A1B0351A000AA87F2 /* Time.png in Resources */,
+				B4FC97601B03A92500AA87F2 /* BNRQuizViewController.xib in Resources */,
 				B4FC97581B0351A000AA87F2 /* Hypno.png in Resources */,
 				B402CE441B00F30A00DEB1F8 /* LaunchScreen.xib in Resources */,
 				B4FC97591B0351A000AA87F2 /* Hypno@2x.png in Resources */,
@@ -259,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B402CE3C1B00F30A00DEB1F8 /* ViewController.m in Sources */,
+				B4FC975F1B03A92500AA87F2 /* BNRQuizViewController.m in Sources */,
 				B4D995111B024FA10021CCFB /* BNRReminderViewController.m in Sources */,
 				B402CE391B00F30A00DEB1F8 /* AppDelegate.m in Sources */,
 				B402CE361B00F30A00DEB1F8 /* main.m in Sources */,
