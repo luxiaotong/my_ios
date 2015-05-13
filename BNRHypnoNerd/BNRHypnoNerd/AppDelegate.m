@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[BNRHypnosisViewController alloc] init];
+    
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
+    //self.window.rootViewController = rvc;
+    
+    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
+    //self.window.rootViewController = hvc;
+    
+    UITabBarController *tbc = [[UITabBarController alloc] init];
+    tbc.viewControllers = @[hvc, rvc];
+    
+    self.window.rootViewController = tbc;
+    
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound categories:nil]];
+    }
     
     return YES;
 }

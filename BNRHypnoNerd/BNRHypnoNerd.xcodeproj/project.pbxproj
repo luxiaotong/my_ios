@@ -19,6 +19,10 @@
 		B402CE601B00F46700DEB1F8 /* BNRHypnosisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B402CE5E1B00F46700DEB1F8 /* BNRHypnosisViewController.xib */; };
 		B4D995111B024FA10021CCFB /* BNRReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D995101B024FA10021CCFB /* BNRReminderViewController.m */; };
 		B4D995131B02511E0021CCFB /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D995121B02511E0021CCFB /* BNRReminderViewController.xib */; };
+		B4FC97581B0351A000AA87F2 /* Hypno.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FC97541B0351A000AA87F2 /* Hypno.png */; };
+		B4FC97591B0351A000AA87F2 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FC97551B0351A000AA87F2 /* Hypno@2x.png */; };
+		B4FC975A1B0351A000AA87F2 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FC97561B0351A000AA87F2 /* Time.png */; };
+		B4FC975B1B0351A000AA87F2 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FC97571B0351A000AA87F2 /* Time@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		B4D9950F1B024FA10021CCFB /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
 		B4D995101B024FA10021CCFB /* BNRReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewController.m; sourceTree = "<group>"; };
 		B4D995121B02511E0021CCFB /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
+		B4FC97541B0351A000AA87F2 /* Hypno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hypno.png; sourceTree = "<group>"; };
+		B4FC97551B0351A000AA87F2 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
+		B4FC97561B0351A000AA87F2 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		B4FC97571B0351A000AA87F2 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 				B402CE421B00F30A00DEB1F8 /* LaunchScreen.xib */,
 				B402CE591B00F3D300DEB1F8 /* BNRHypnosistView.h */,
 				B402CE5A1B00F3D300DEB1F8 /* BNRHypnosistView.m */,
+				B4FC97541B0351A000AA87F2 /* Hypno.png */,
+				B4FC97551B0351A000AA87F2 /* Hypno@2x.png */,
+				B4FC97561B0351A000AA87F2 /* Time.png */,
+				B4FC97571B0351A000AA87F2 /* Time@2x.png */,
 				B402CE331B00F30A00DEB1F8 /* Supporting Files */,
 			);
 			path = BNRHypnoNerd;
@@ -221,8 +233,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B402CE601B00F46700DEB1F8 /* BNRHypnosisViewController.xib in Resources */,
+				B4FC975B1B0351A000AA87F2 /* Time@2x.png in Resources */,
 				B402CE3F1B00F30A00DEB1F8 /* Main.storyboard in Resources */,
+				B4FC975A1B0351A000AA87F2 /* Time.png in Resources */,
+				B4FC97581B0351A000AA87F2 /* Hypno.png in Resources */,
 				B402CE441B00F30A00DEB1F8 /* LaunchScreen.xib in Resources */,
+				B4FC97591B0351A000AA87F2 /* Hypno@2x.png in Resources */,
 				B402CE411B00F30A00DEB1F8 /* Images.xcassets in Resources */,
 				B4D995131B02511E0021CCFB /* BNRReminderViewController.xib in Resources */,
 			);

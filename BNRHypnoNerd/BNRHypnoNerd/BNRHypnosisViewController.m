@@ -15,6 +15,19 @@
 
 @implementation BNRHypnosisViewController
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if ( self ) {
+        self.tabBarItem.title = @"hypnosis";
+        UIImage *timeImage    = [UIImage imageNamed:@"Hypno.png"];
+        self.tabBarItem.image = timeImage;
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
