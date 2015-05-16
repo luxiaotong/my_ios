@@ -23,7 +23,6 @@
     if ( self ) {
         self.backgroundColor = [UIColor clearColor];
         self.circleColor     = [UIColor lightGrayColor];
-        NSLog(@"background color: %@", self.backgroundColor);
     }
     
     return self;
