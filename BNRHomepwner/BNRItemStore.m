@@ -54,4 +54,9 @@
     return self.privateItems;
 }
 
+- (void)removeAtIndex:(NSInteger)index
+{
+    [self.privateItems removeObjectAtIndex:(NSUInteger)index];
+}
+
 @end
