@@ -22,7 +22,9 @@
     
     BNRItemViewController *ivc = [[BNRItemViewController alloc] init];
     
-    self.window.rootViewController   = ivc;
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:ivc];
+    
+    self.window.rootViewController   = nvc;
     
     return YES;
 }

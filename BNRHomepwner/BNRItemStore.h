@@ -13,7 +13,9 @@
 
 + (instancetype)sharedStore;
 - (BNRItem *)createItem;
+- (BNRItem *)createEmptyItem;
 - (NSArray *)allItems;
 - (void)removeAtIndex:(NSInteger)index;
+- (void)removeAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex;
 
 @end

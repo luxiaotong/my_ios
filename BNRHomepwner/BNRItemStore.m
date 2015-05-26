@@ -49,6 +49,13 @@
     return bnrItemObj;
 }
 
+- (BNRItem *)createEmptyItem
+{
+    BNRItem *bnrItemObj = [[BNRItem alloc] init];
+    [self.privateItems addObject:bnrItemObj];
+    return bnrItemObj;
+}
+
 - (NSArray *)allItems
 {
     return self.privateItems;
@@ -59,4 +66,11 @@
     [self.privateItems removeObjectAtIndex:(NSUInteger)index];
 }
 
+- (void)removeAtIndex:(NSUInteger)fromIndex
+              toIndex:(NSUInteger)toIndex
+{
+    BNRItem *tmpItem = self.privateItems[fromIndex];
+    [self.privateItems removeObjectAtIndex:fromIndex];
+    [self.privateItems insertObject:tmpItem atIndex:toIndex];
+}
 @end

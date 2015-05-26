@@ -9,15 +9,17 @@
 #import "BNRItemViewController.h"
 #import "BNRItemStore.h"
 #import "BNRItem.h"
+#import "BNRDetailViewController.h"
 
 @interface BNRItemViewController ()
 
-@property (nonatomic) IBOutlet UIView *headerView;
+//@property (nonatomic) IBOutlet UIView *headerView;
 
 @end
 
 @implementation BNRItemViewController
 
+/*
 - (UIView *)headerView
 {
     if ( !_headerView ) {
@@ -26,10 +28,21 @@
     
     return _headerView;
 }
+*/
 
 - (instancetype)init
 {
     self = [super initWithStyle:UITableViewStylePlain];
+    
+    //Navgation
+    self.navigationItem.title = @"Homepwner";
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *newItemButton = [[UIBarButtonItem alloc]
+                                      initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                      target:self
+                                      action:@selector(newButton:)];
+    self.navigationItem.rightBarButtonItem = newItemButton;
+    
     return self;
 }
 
@@ -66,9 +79,16 @@
 
 - (void)viewDidLoad
 {
-    self.tableView.tableHeaderView = self.headerView;
+    //self.tableView.tableHeaderView = self.headerView;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
+/*
 - (IBAction)editButton:(id)sender
 {
     if ( self.tableView.editing == NO ) {
@@ -77,14 +97,20 @@
         self.tableView.editing = NO;
     }
 }
+*/
 
 - (IBAction)newButton:(id)sender
 {
+    /*
     [[BNRItemStore sharedStore] createItem];
     NSInteger lastrow = [self.tableView numberOfRowsInSection:0];
     NSIndexPath *insertIndexPath = [NSIndexPath indexPathForRow:lastrow inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[insertIndexPath]
                           withRowAnimation:UITableViewRowAnimationAutomatic];
+     */
+    BNRDetailViewController *dvc = [[BNRDetailViewController alloc] init];
+    dvc.bnrItem = [[BNRItemStore sharedStore] createEmptyItem];
+    [self.navigationController pushViewController:dvc animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyl forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -100,6 +126,9 @@
 {
     if ( destinationIndexPath.section == 1 ) {
         return;
+    } else {
+        [[BNRItemStore sharedStore] removeAtIndex:sourceIndexPath.row
+                                          toIndex:destinationIndexPath.row];
     }
 }
 
@@ -134,6 +163,14 @@
     } else {
         return proposedDestinationIndexPath;
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BNRDetailViewController *dvc = [[BNRDetailViewController alloc] init];
+    NSArray *bnrAllItems = [[BNRItemStore sharedStore] allItems];
+    dvc.bnrItem = bnrAllItems[indexPath.row];
+    [self.navigationController pushViewController:dvc animated:YES];
 }
 
 @end
