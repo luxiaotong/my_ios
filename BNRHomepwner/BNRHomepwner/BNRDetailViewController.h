@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BNRItem.h"
 
-@interface BNRDetailViewController : UIViewController
+@interface BNRDetailViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
 
 @property (nonatomic) BNRItem *bnrItem;
 

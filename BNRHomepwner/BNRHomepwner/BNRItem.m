@@ -70,6 +70,7 @@
     return [self initWithItemName:name valueInDollars:0 serialNumber:sNumber];
 }
 
+/*
 - (NSString *) itemName
 {
     return _itemName;
@@ -104,6 +105,7 @@
 {
     return _dateCreated;
 }
+*/
 
 - (NSString *) description
 {

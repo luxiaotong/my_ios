@@ -7,6 +7,8 @@
 //
 
 #import "BNRDetailViewController.h"
+#import "BNRImageStore.h"
+#import <UIKit/UIKit.h>
 
 @interface BNRDetailViewController ()
 
@@ -14,14 +16,19 @@
 @property (weak, nonatomic) IBOutlet UITextField *seriallNumberField;
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
 @implementation BNRDetailViewController
 
+
+#pragma mark - view
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,23 +46,58 @@
         self.seriallNumberField.text= self.bnrItem.serialNumber;
         self.valueField.text        = [NSString stringWithFormat:@"%d", self.bnrItem.valueInDollars];
         self.dateLabel.text         = [self.bnrItem.dateCreated description];
+        self.imageView.image        = [[BNRImageStore sharedStore] getImageForKey:self.bnrItem.imageKey];
     }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    if ( self.bnrItem ) {
-        self.bnrItem.itemName = self.nameField.text;
-        self.bnrItem.serialNumber = self.seriallNumberField.text;
-        self.bnrItem.valueInDollars = self.valueField.text.intValue;
-    } else {
-        BNRItem *bnrItem = [[BNRItem alloc] initWithItemName:self.nameField.text
-                                              valueInDollars:self.valueField.text.intValue
-                                                serialNumber:self.seriallNumberField.text];
-        
-    }
+    self.bnrItem.itemName = self.nameField.text;
+    self.bnrItem.serialNumber = self.seriallNumberField.text;
+    self.bnrItem.valueInDollars = self.valueField.text.intValue;
 }
 
+#pragma mark - take picture
+- (IBAction)takePicture:(id)sender {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    if ( [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] ) {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    } else {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    imagePicker.delegate = self;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+    NSUUID *uuid = [[NSUUID alloc] init];
+    NSString *imageKey = [uuid UUIDString];
+    self.bnrItem.imageKey = imageKey;
+    
+    [[BNRImageStore sharedStore] setImage:image forKey:imageKey];
+    self.imageView.image = image;
+}
+
+#pragma mark - text field delegate
+
+/*
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    return NO;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [textField becomeFirstResponder];
+}
+ */
 /*
 #pragma mark - Navigation
 
