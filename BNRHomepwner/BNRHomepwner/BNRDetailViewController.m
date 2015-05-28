@@ -13,7 +13,7 @@
 @interface BNRDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
-@property (weak, nonatomic) IBOutlet UITextField *seriallNumberField;
+@property (weak, nonatomic) IBOutlet UITextField *serialField;
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -43,7 +43,9 @@
     if ( self.bnrItem ) {
         self.navigationItem.title   = self.bnrItem.itemName;
         self.nameField.text         = self.bnrItem.itemName;
-        self.seriallNumberField.text= self.bnrItem.serialNumber;
+        self.nameField.delegate     = self;
+        self.serialField.text       = self.bnrItem.serialNumber;
+        self.serialField.delegate   = self;
         self.valueField.text        = [NSString stringWithFormat:@"%d", self.bnrItem.valueInDollars];
         self.dateLabel.text         = [self.bnrItem.dateCreated description];
         self.imageView.image        = [[BNRImageStore sharedStore] getImageForKey:self.bnrItem.imageKey];
@@ -53,8 +55,12 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     self.bnrItem.itemName = self.nameField.text;
-    self.bnrItem.serialNumber = self.seriallNumberField.text;
+    self.bnrItem.serialNumber = self.serialField.text;
     self.bnrItem.valueInDollars = self.valueField.text.intValue;
+}
+
+- (IBAction)backgroundTapped:(id)sender {
+    [self.view endEditing:YES];
 }
 
 #pragma mark - take picture
@@ -86,6 +92,12 @@
 }
 
 #pragma mark - text field delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 /*
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
