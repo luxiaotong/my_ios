@@ -6,9 +6,11 @@
 //  Copyright (c) 2015年 逯晓瞳. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "BNRDetailViewController.h"
 #import "BNRImageStore.h"
-#import <UIKit/UIKit.h>
+#import "BNRDateViewController.h"
+
 
 @interface BNRDetailViewController ()
 
@@ -47,20 +49,38 @@
         self.serialField.text       = self.bnrItem.serialNumber;
         self.serialField.delegate   = self;
         self.valueField.text        = [NSString stringWithFormat:@"%d", self.bnrItem.valueInDollars];
-        self.dateLabel.text         = [self.bnrItem.dateCreated description];
         self.imageView.image        = [[BNRImageStore sharedStore] getImageForKey:self.bnrItem.imageKey];
+        
+        
+        NSDateFormatter *dateFmt    = [[NSDateFormatter alloc] init];
+        [dateFmt setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+        dateFmt.timeZone            = [NSTimeZone systemTimeZone];
+        self.dateLabel.text         = [dateFmt stringFromDate:self.bnrItem.dateCreated];
     }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    self.bnrItem.itemName = self.nameField.text;
-    self.bnrItem.serialNumber = self.serialField.text;
+    self.bnrItem.itemName       = self.nameField.text;
+    self.bnrItem.serialNumber   = self.serialField.text;
     self.bnrItem.valueInDollars = self.valueField.text.intValue;
+    
+    NSDateFormatter *dateFmt    = [[NSDateFormatter alloc] init];
+    [dateFmt setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    self.bnrItem.dateCreated    = [dateFmt dateFromString:self.dateLabel.text];
 }
 
-- (IBAction)backgroundTapped:(id)sender {
+- (IBAction)backgroundTapped:(id)sender
+{
     [self.view endEditing:YES];
+}
+
+- (IBAction)changDate:(UIButton *)sender
+{
+    BNRDateViewController *dateVC = [[BNRDateViewController alloc] init];
+    dateVC.navigationItem.title = @"Change Date";
+    dateVC.bnrItem = self.bnrItem;
+    [self.navigationController pushViewController:dateVC animated:YES];
 }
 
 #pragma mark - take picture
@@ -110,6 +130,8 @@
     [textField becomeFirstResponder];
 }
  */
+
+
 /*
 #pragma mark - Navigation
 

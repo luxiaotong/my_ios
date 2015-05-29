@@ -18,6 +18,8 @@
 		B44061E21B08CBD500E51779 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B44061E11B08CBD500E51779 /* BNRItem.m */; };
 		B44061E51B08D86600E51779 /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B44061E41B08D86600E51779 /* BNRItemStore.m */; };
 		B454AA311B16113E0003494C /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B454AA301B16113E0003494C /* BNRImageStore.m */; };
+		B459D2EE1B18B2030024FF4B /* BNRDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B459D2EC1B18B2030024FF4B /* BNRDateViewController.m */; };
+		B459D2EF1B18B2030024FF4B /* BNRDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B459D2ED1B18B2030024FF4B /* BNRDateViewController.xib */; };
 		B470A4411B0A45B9002143AA /* BNRHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B470A4401B0A45B9002143AA /* BNRHeaderView.xib */; };
 		B486D34F1B1379BF00AE9780 /* BNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B486D34D1B1379BF00AE9780 /* BNRDetailViewController.m */; };
 		B486D3501B1379BF00AE9780 /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B486D34E1B1379BF00AE9780 /* BNRDetailViewController.xib */; };
@@ -55,6 +57,9 @@
 		B44061E41B08D86600E51779 /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItemStore.m; path = ../BNRItemStore.m; sourceTree = "<group>"; };
 		B454AA2F1B16113E0003494C /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
 		B454AA301B16113E0003494C /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
+		B459D2EB1B18B2030024FF4B /* BNRDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDateViewController.h; sourceTree = "<group>"; };
+		B459D2EC1B18B2030024FF4B /* BNRDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDateViewController.m; sourceTree = "<group>"; };
+		B459D2ED1B18B2030024FF4B /* BNRDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRDateViewController.xib; sourceTree = "<group>"; };
 		B470A4401B0A45B9002143AA /* BNRHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRHeaderView.xib; sourceTree = "<group>"; };
 		B486D34C1B1379BF00AE9780 /* BNRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDetailViewController.h; sourceTree = "<group>"; };
 		B486D34D1B1379BF00AE9780 /* BNRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDetailViewController.m; sourceTree = "<group>"; };
@@ -108,6 +113,9 @@
 				B486D34C1B1379BF00AE9780 /* BNRDetailViewController.h */,
 				B486D34D1B1379BF00AE9780 /* BNRDetailViewController.m */,
 				B486D34E1B1379BF00AE9780 /* BNRDetailViewController.xib */,
+				B459D2EB1B18B2030024FF4B /* BNRDateViewController.h */,
+				B459D2EC1B18B2030024FF4B /* BNRDateViewController.m */,
+				B459D2ED1B18B2030024FF4B /* BNRDateViewController.xib */,
 				B454AA2F1B16113E0003494C /* BNRImageStore.h */,
 				B454AA301B16113E0003494C /* BNRImageStore.m */,
 				B44061BE1B08C51200E51779 /* ViewController.h */,
@@ -231,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B470A4411B0A45B9002143AA /* BNRHeaderView.xib in Resources */,
+				B459D2EF1B18B2030024FF4B /* BNRDateViewController.xib in Resources */,
 				B44061C31B08C51200E51779 /* Main.storyboard in Resources */,
 				B44061C81B08C51200E51779 /* LaunchScreen.xib in Resources */,
 				B44061C51B08C51200E51779 /* Images.xcassets in Resources */,
@@ -253,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44061C01B08C51200E51779 /* ViewController.m in Sources */,
+				B459D2EE1B18B2030024FF4B /* BNRDateViewController.m in Sources */,
 				B44061BD1B08C51200E51779 /* AppDelegate.m in Sources */,
 				B44061E21B08CBD500E51779 /* BNRItem.m in Sources */,
 				B486D34F1B1379BF00AE9780 /* BNRDetailViewController.m in Sources */,

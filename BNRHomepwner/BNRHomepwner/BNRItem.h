@@ -20,7 +20,7 @@
 @property (nonatomic) NSString *serialNumber;
 @property (nonatomic) int       valueInDollars;
 @property (nonatomic) NSString *imageKey;
-@property (nonatomic, readonly) NSDate *dateCreated;
+@property (nonatomic) NSDate *dateCreated;
 
 + (instancetype) randomItem;
 
