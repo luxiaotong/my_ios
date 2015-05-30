@@ -56,4 +56,9 @@
     return self.imageDict[key];
 }
 
+- (void) delImageForKey:(NSString *)key
+{
+    [self.imageDict removeObjectForKey:key];
+}
+
 @end

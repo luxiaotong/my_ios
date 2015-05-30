@@ -70,6 +70,7 @@
     self.bnrItem.dateCreated    = [dateFmt dateFromString:self.dateLabel.text];
 }
 
+#pragma mark - action
 - (IBAction)backgroundTapped:(id)sender
 {
     [self.view endEditing:YES];
@@ -81,6 +82,13 @@
     dateVC.navigationItem.title = @"Change Date";
     dateVC.bnrItem = self.bnrItem;
     [self.navigationController pushViewController:dateVC animated:YES];
+}
+
+- (IBAction)deleteImage:(UIButton *)sender
+{
+    [[BNRImageStore sharedStore] delImageForKey:self.bnrItem.imageKey];
+    self.bnrItem.imageKey = @"";
+    self.imageView.image = nil;
 }
 
 #pragma mark - take picture

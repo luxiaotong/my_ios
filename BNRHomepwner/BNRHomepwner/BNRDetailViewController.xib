@@ -90,6 +90,14 @@
                         <action selector="changDate:" destination="-1" eventType="touchUpInside" id="rEB-p0-65d"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q6e-id-mW8">
+                    <rect key="frame" x="261" y="272" width="29" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Del"/>
+                    <connections>
+                        <action selector="deleteImage:" destination="-1" eventType="touchUpInside" id="XiX-gY-hea"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <connections>
