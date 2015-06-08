@@ -35,6 +35,13 @@
 - (instancetype)initPrivate
 {
     self = [super init];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *cacheDirectory = [paths objectAtIndex:0];
+    NSString *fullPath = [cacheDirectory stringByAppendingPathComponent:@"archive.data"];
+    
+    _privateItems = [NSKeyedUnarchiver unarchiveObjectWithFile:fullPath];
+    
     if ( !_privateItems ) {
         _privateItems = [[NSMutableArray alloc] init];
     }
@@ -82,18 +89,5 @@
 
     [NSKeyedArchiver archiveRootObject:self.privateItems toFile:fullPath];
 //    NSLog(@"fullPath %@", fullPath);
-}
-
-- (void)recover
-{
-    NSLog(@"%@", _privateItems);
-    if ( 1 || !_privateItems ) {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *cacheDirectory = [paths objectAtIndex:0];
-        NSString *fullPath = [cacheDirectory stringByAppendingPathComponent:@"archive.data"];
-        
-        _privateItems = [NSKeyedUnarchiver unarchiveObjectWithFile:fullPath];
-        NSLog(@"fullPath %@", fullPath);
-    }
 }
 @end

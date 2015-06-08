@@ -43,9 +43,6 @@
                                       action:@selector(newButton:)];
     self.navigationItem.rightBarButtonItem = newItemButton;
     
-    //Init data from archiver
-    [[BNRItemStore sharedStore] recover];
-    
     return self;
 }
 

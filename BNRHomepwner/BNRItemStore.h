@@ -18,6 +18,5 @@
 - (void)removeAtIndex:(NSInteger)index;
 - (void)removeAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex;
 - (void)saveChange;
-- (void)recover;
 
 @end
