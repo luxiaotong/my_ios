@@ -120,6 +120,7 @@
         self.itemName       = [coder decodeObjectForKey:@"itemName"];
         self.serialNumber   = [coder decodeObjectForKey:@"serialNumber"];
         self.valueInDollars = [coder decodeIntForKey:@"valueInDollars"];
+        self.imageKey       = [coder decodeObjectForKey:@"imageKey"];
         self.dateCreated    = [coder decodeObjectForKey:@"dateCreated"];
     }
     
@@ -132,6 +133,7 @@
         [aCoder encodeObject:self.itemName forKey:@"itemName"];
         [aCoder encodeObject:self.serialNumber forKey:@"serialNumber"];
         [aCoder encodeInt:self.valueInDollars forKey:@"valueInDollars"];
+        [aCoder encodeObject:self.imageKey forKey:@"imageKey"];
         [aCoder encodeObject:self.dateCreated forKey:@"dateCreated"];
     }
 }

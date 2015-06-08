@@ -49,11 +49,28 @@
 - (void) setImage:(UIImage *)image forKey:(NSString *)key
 {
     self.imageDict[key] = image;
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *cacheDir = paths[0];
+    NSString *fullPath = [cacheDir stringByAppendingPathComponent:key];
+    
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.7); // 0.7 is JPG quality
+    [imageData writeToFile:fullPath atomically:YES];
 }
 
 - (UIImage *) getImageForKey:(NSString *)key
 {
-    return self.imageDict[key];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *cacheDir = paths[0];
+    NSString *fullPath = [cacheDir stringByAppendingPathComponent:key];
+    
+    UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfFile:fullPath]];
+    
+    if ( image ) {
+        return image;
+    } else {
+        return self.imageDict[key];
+    }
 }
 
 - (void) delImageForKey:(NSString *)key
