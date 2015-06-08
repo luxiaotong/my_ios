@@ -73,4 +73,27 @@
     [self.privateItems removeObjectAtIndex:fromIndex];
     [self.privateItems insertObject:tmpItem atIndex:toIndex];
 }
+
+- (void)saveChange
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *cacheDirectory = [paths objectAtIndex:0];
+    NSString *fullPath = [cacheDirectory stringByAppendingPathComponent:@"archive.data"];
+
+    [NSKeyedArchiver archiveRootObject:self.privateItems toFile:fullPath];
+//    NSLog(@"fullPath %@", fullPath);
+}
+
+- (void)recover
+{
+    NSLog(@"%@", _privateItems);
+    if ( 1 || !_privateItems ) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *cacheDirectory = [paths objectAtIndex:0];
+        NSString *fullPath = [cacheDirectory stringByAppendingPathComponent:@"archive.data"];
+        
+        _privateItems = [NSKeyedUnarchiver unarchiveObjectWithFile:fullPath];
+        NSLog(@"fullPath %@", fullPath);
+    }
+}
 @end

@@ -112,4 +112,28 @@
     return [NSString stringWithFormat:@"itemName: %@, valueInDollars: %d, serialNumber: %@, dateCreated:%@", self.itemName, self.valueInDollars, self.serialNumber, self.dateCreated];
 }
 
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [super init];
+    
+    if ( self ) {
+        self.itemName       = [coder decodeObjectForKey:@"itemName"];
+        self.serialNumber   = [coder decodeObjectForKey:@"serialNumber"];
+        self.valueInDollars = [coder decodeIntForKey:@"valueInDollars"];
+        self.dateCreated    = [coder decodeObjectForKey:@"dateCreated"];
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    if ( self ) {
+        [aCoder encodeObject:self.itemName forKey:@"itemName"];
+        [aCoder encodeObject:self.serialNumber forKey:@"serialNumber"];
+        [aCoder encodeInt:self.valueInDollars forKey:@"valueInDollars"];
+        [aCoder encodeObject:self.dateCreated forKey:@"dateCreated"];
+    }
+}
+
 @end
