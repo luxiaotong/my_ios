@@ -10,6 +10,7 @@
 #import "BNRItemStore.h"
 #import "BNRItem.h"
 #import "BNRDetailViewController.h"
+#import "BNRItemCell.h"
 
 @interface BNRItemViewController ()
 
@@ -62,6 +63,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    BNRItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BNRItemCell"];
+    if ( ! cell ) {
+        [tableView registerNib:[UINib nibWithNibName:@"BNRItemCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"BNRItemCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"BNRItemCell"];
+    }
+
+    if ( indexPath.section == 0 ) {
+        BNRItem *bnrItemObj     = [[BNRItemStore sharedStore] allItems][indexPath.row];
+        cell.nameLabel.text     = bnrItemObj.itemName;
+        cell.serialNumberLabel.text  = bnrItemObj.serialNumber;
+        cell.valueLabel.text    = [NSString stringWithFormat:@"%d", bnrItemObj.valueInDollars];
+    } else {
+        cell.nameLabel.text = @"No more items!";
+    }
+    
+    /*
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"BNRItemViewCell"];
 
     if ( cell ) {
@@ -73,6 +90,7 @@
             cell.textLabel.text = @"No more items!";
         }
     }
+    */
     
     return cell;
 }
