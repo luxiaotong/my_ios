@@ -417,6 +417,7 @@
 				B4833AB91B9400E6007BCC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4833ABA1B9400E6007BCC3C /* Build configuration list for PBXNativeTarget "Control FunTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				B4833ABC1B9400E6007BCC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
