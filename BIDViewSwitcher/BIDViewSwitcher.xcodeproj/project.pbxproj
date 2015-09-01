@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4CF15E61B900FF700B39B91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF15E51B900FF700B39B91 /* main.m */; };
+		B4CF15E91B900FF700B39B91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF15E81B900FF700B39B91 /* AppDelegate.m */; };
+		B4CF15EC1B900FF700B39B91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF15EB1B900FF700B39B91 /* ViewController.m */; };
+		B4CF15EF1B900FF700B39B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF15ED1B900FF700B39B91 /* Main.storyboard */; };
+		B4CF15F11B900FF700B39B91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CF15F01B900FF700B39B91 /* Images.xcassets */; };
+		B4CF15F41B900FF700B39B91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4CF15F21B900FF700B39B91 /* LaunchScreen.xib */; };
+		B4CF16001B900FF700B39B91 /* BIDViewSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF15FF1B900FF700B39B91 /* BIDViewSwitcherTests.m */; };
+		B4CF160C1B902D3000B39B91 /* BIDBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF160B1B902D3000B39B91 /* BIDBlueViewController.m */; };
+		B4CF160F1B902D5500B39B91 /* BIDYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF160E1B902D5500B39B91 /* BIDYellowViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4CF15FA1B900FF700B39B91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4CF15D61B900E9E00B39B91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4CF15DF1B900FF700B39B91;
+			remoteInfo = BIDViewSwitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4CF15E01B900FF700B39B91 /* BIDViewSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BIDViewSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CF15E41B900FF700B39B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CF15E51B900FF700B39B91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4CF15E71B900FF700B39B91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B4CF15E81B900FF700B39B91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4CF15EA1B900FF700B39B91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B4CF15EB1B900FF700B39B91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4CF15EE1B900FF700B39B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4CF15F01B900FF700B39B91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4CF15F31B900FF700B39B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B4CF15F91B900FF700B39B91 /* BIDViewSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BIDViewSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CF15FE1B900FF700B39B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4CF15FF1B900FF700B39B91 /* BIDViewSwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewSwitcherTests.m; sourceTree = "<group>"; };
+		B4CF160A1B902D3000B39B91 /* BIDBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDBlueViewController.h; sourceTree = "<group>"; };
+		B4CF160B1B902D3000B39B91 /* BIDBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDBlueViewController.m; sourceTree = "<group>"; };
+		B4CF160D1B902D5500B39B91 /* BIDYellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDYellowViewController.h; sourceTree = "<group>"; };
+		B4CF160E1B902D5500B39B91 /* BIDYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDYellowViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4CF15DD1B900FF700B39B91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF15F61B900FF700B39B91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4CF15D51B900E9E00B39B91 = {
+			isa = PBXGroup;
+			children = (
+				B4CF15E21B900FF700B39B91 /* BIDViewSwitcher */,
+				B4CF15FC1B900FF700B39B91 /* BIDViewSwitcherTests */,
+				B4CF15E11B900FF700B39B91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4CF15E11B900FF700B39B91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF15E01B900FF700B39B91 /* BIDViewSwitcher.app */,
+				B4CF15F91B900FF700B39B91 /* BIDViewSwitcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4CF15E21B900FF700B39B91 /* BIDViewSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF15E71B900FF700B39B91 /* AppDelegate.h */,
+				B4CF15E81B900FF700B39B91 /* AppDelegate.m */,
+				B4CF15EA1B900FF700B39B91 /* ViewController.h */,
+				B4CF15EB1B900FF700B39B91 /* ViewController.m */,
+				B4CF15ED1B900FF700B39B91 /* Main.storyboard */,
+				B4CF160A1B902D3000B39B91 /* BIDBlueViewController.h */,
+				B4CF160B1B902D3000B39B91 /* BIDBlueViewController.m */,
+				B4CF160D1B902D5500B39B91 /* BIDYellowViewController.h */,
+				B4CF160E1B902D5500B39B91 /* BIDYellowViewController.m */,
+				B4CF15F01B900FF700B39B91 /* Images.xcassets */,
+				B4CF15F21B900FF700B39B91 /* LaunchScreen.xib */,
+				B4CF15E31B900FF700B39B91 /* Supporting Files */,
+			);
+			path = BIDViewSwitcher;
+			sourceTree = "<group>";
+		};
+		B4CF15E31B900FF700B39B91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF15E41B900FF700B39B91 /* Info.plist */,
+				B4CF15E51B900FF700B39B91 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4CF15FC1B900FF700B39B91 /* BIDViewSwitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF15FF1B900FF700B39B91 /* BIDViewSwitcherTests.m */,
+				B4CF15FD1B900FF700B39B91 /* Supporting Files */,
+			);
+			path = BIDViewSwitcherTests;
+			sourceTree = "<group>";
+		};
+		B4CF15FD1B900FF700B39B91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF15FE1B900FF700B39B91 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4CF15DF1B900FF700B39B91 /* BIDViewSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CF16011B900FF700B39B91 /* Build configuration list for PBXNativeTarget "BIDViewSwitcher" */;
+			buildPhases = (
+				B4CF15DC1B900FF700B39B91 /* Sources */,
+				B4CF15DD1B900FF700B39B91 /* Frameworks */,
+				B4CF15DE1B900FF700B39B91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BIDViewSwitcher;
+			productName = BIDViewSwitcher;
+			productReference = B4CF15E01B900FF700B39B91 /* BIDViewSwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4CF15F81B900FF700B39B91 /* BIDViewSwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CF16041B900FF700B39B91 /* Build configuration list for PBXNativeTarget "BIDViewSwitcherTests" */;
+			buildPhases = (
+				B4CF15F51B900FF700B39B91 /* Sources */,
+				B4CF15F61B900FF700B39B91 /* Frameworks */,
+				B4CF15F71B900FF700B39B91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4CF15FB1B900FF700B39B91 /* PBXTargetDependency */,
+			);
+			name = BIDViewSwitcherTests;
+			productName = BIDViewSwitcherTests;
+			productReference = B4CF15F91B900FF700B39B91 /* BIDViewSwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4CF15D61B900E9E00B39B91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BID;
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					B4CF15DF1B900FF700B39B91 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B4CF15F81B900FF700B39B91 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B4CF15DF1B900FF700B39B91;
+					};
+				};
+			};
+			buildConfigurationList = B4CF15D91B900E9E00B39B91 /* Build configuration list for PBXProject "BIDViewSwitcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4CF15D51B900E9E00B39B91;
+			productRefGroup = B4CF15E11B900FF700B39B91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4CF15DF1B900FF700B39B91 /* BIDViewSwitcher */,
+				B4CF15F81B900FF700B39B91 /* BIDViewSwitcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4CF15DE1B900FF700B39B91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CF15EF1B900FF700B39B91 /* Main.storyboard in Resources */,
+				B4CF15F41B900FF700B39B91 /* LaunchScreen.xib in Resources */,
+				B4CF15F11B900FF700B39B91 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF15F71B900FF700B39B91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4CF15DC1B900FF700B39B91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CF160F1B902D5500B39B91 /* BIDYellowViewController.m in Sources */,
+				B4CF160C1B902D3000B39B91 /* BIDBlueViewController.m in Sources */,
+				B4CF15EC1B900FF700B39B91 /* ViewController.m in Sources */,
+				B4CF15E91B900FF700B39B91 /* AppDelegate.m in Sources */,
+				B4CF15E61B900FF700B39B91 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF15F51B900FF700B39B91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CF16001B900FF700B39B91 /* BIDViewSwitcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4CF15FB1B900FF700B39B91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4CF15DF1B900FF700B39B91 /* BIDViewSwitcher */;
+			targetProxy = B4CF15FA1B900FF700B39B91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4CF15ED1B900FF700B39B91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4CF15EE1B900FF700B39B91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4CF15F21B900FF700B39B91 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4CF15F31B900FF700B39B91 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4CF15DA1B900E9E00B39B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B4CF15DB1B900E9E00B39B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		B4CF16021B900FF700B39B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BIDViewSwitcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4CF16031B900FF700B39B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BIDViewSwitcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4CF16051B900FF700B39B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BIDViewSwitcherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BIDViewSwitcher.app/BIDViewSwitcher";
+			};
+			name = Debug;
+		};
+		B4CF16061B900FF700B39B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BIDViewSwitcherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BIDViewSwitcher.app/BIDViewSwitcher";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4CF15D91B900E9E00B39B91 /* Build configuration list for PBXProject "BIDViewSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CF15DA1B900E9E00B39B91 /* Debug */,
+				B4CF15DB1B900E9E00B39B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CF16011B900FF700B39B91 /* Build configuration list for PBXNativeTarget "BIDViewSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CF16021B900FF700B39B91 /* Debug */,
+				B4CF16031B900FF700B39B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CF16041B900FF700B39B91 /* Build configuration list for PBXNativeTarget "BIDViewSwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CF16051B900FF700B39B91 /* Debug */,
+				B4CF16061B900FF700B39B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4CF15D61B900E9E00B39B91 /* Project object */;
+}
