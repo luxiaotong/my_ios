@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *numberField;
 @property (nonatomic, retain) UIButton *doneInKeyboardButton;
+@property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
 
 @end
 
@@ -26,6 +27,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleKeyboardDidShow:) name:UIKeyboardWillShowNotification object:nil];
     //注册键盘隐藏通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleKeyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
+    //init slider
+    self.sliderLabel.text = @"50";
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -41,6 +45,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - keyboard
 - (IBAction)textFieldDoneEditing:(id)sender {
     
 }
@@ -50,6 +55,7 @@
     [self.numberField resignFirstResponder];
 }
 
+#pragma mark - Done in keyboard
 // 键盘出现处理事件
 - (void)handleKeyboardDidShow:(NSNotification *)notification
 {
@@ -143,4 +149,9 @@
     [[[UIApplication sharedApplication] keyWindow] endEditing:YES];//关闭键盘
 }
 
+#pragma mark - slider
+- (IBAction)sliderChanged:(UISlider *)sender {
+    long progress = lroundf(sender.value);
+    self.sliderLabel.text = [NSString stringWithFormat:@"%ld", progress];
+}
 @end
