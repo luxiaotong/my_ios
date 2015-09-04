@@ -62,7 +62,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eS-ha-xwq">
-                                <rect key="frame" x="16" y="189" width="29" height="21"/>
+                                <rect key="frame" x="16" y="189" width="29" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="29" id="Ief-3c-YfU"/>
                                 </constraints>
@@ -70,34 +70,84 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C60-OY-kaU">
+                                <rect key="frame" x="16" y="222" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="pag-A4-2ei"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Switches"/>
+                                    <segment title="Button"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggleControls:" destination="vXZ-lx-hvc" eventType="valueChanged" id="qbo-F9-Q9l"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2KM-9u-9GP">
+                                <rect key="frame" x="16" y="268" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="z1w-eE-YJ1"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lux-UB-8df">
+                                <rect key="frame" x="255" y="268" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="qmb-ii-Knf"/>
+                                </connections>
+                            </switch>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtZ-IG-td2">
+                                <rect key="frame" x="16" y="268" width="288" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="WzF-da-YZ5"/>
+                                </constraints>
+                                <state key="normal" title="Do Something" backgroundImage="whiteButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="blueButton"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9mL-SN-dHY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IME-6U-vvU" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="1BN-L5-hwT"/>
                             <constraint firstItem="3ed-Eh-GMz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="21" id="AjH-5O-QEa"/>
+                            <constraint firstItem="2KM-9u-9GP" firstAttribute="top" secondItem="C60-OY-kaU" secondAttribute="bottom" constant="18" id="Boa-TC-Lfn"/>
                             <constraint firstItem="0eS-ha-xwq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="C96-eb-vcc"/>
+                            <constraint firstItem="CtZ-IG-td2" firstAttribute="top" secondItem="C60-OY-kaU" secondAttribute="bottom" constant="18" id="Hdn-OB-VDB"/>
                             <constraint firstItem="yzV-Zt-KhF" firstAttribute="leading" secondItem="jQN-g0-iGO" secondAttribute="trailing" constant="8" id="Hzg-Hn-18P"/>
                             <constraint firstItem="yzV-Zt-KhF" firstAttribute="top" secondItem="IME-6U-vvU" secondAttribute="bottom" constant="8" id="Mb0-9C-far"/>
                             <constraint firstItem="Z5G-Rq-3JK" firstAttribute="leading" secondItem="0eS-ha-xwq" secondAttribute="trailing" constant="8" id="Oo1-4x-NiM"/>
+                            <constraint firstItem="Lux-UB-8df" firstAttribute="leading" secondItem="2KM-9u-9GP" secondAttribute="trailing" constant="190" id="SF1-Oz-jXu"/>
                             <constraint firstItem="Z5G-Rq-3JK" firstAttribute="top" secondItem="01Z-ax-5Bw" secondAttribute="bottom" constant="8" id="URy-uY-PMZ"/>
                             <constraint firstItem="01Z-ax-5Bw" firstAttribute="leading" secondItem="3ed-Eh-GMz" secondAttribute="trailing" constant="8" id="VVg-Q0-LZA"/>
                             <constraint firstItem="jQN-g0-iGO" firstAttribute="top" secondItem="IME-6U-vvU" secondAttribute="bottom" constant="12" id="WMd-Sv-MkJ"/>
                             <constraint firstItem="01Z-ax-5Bw" firstAttribute="top" secondItem="yzV-Zt-KhF" secondAttribute="bottom" constant="8" id="XcB-3Q-XRv"/>
+                            <constraint firstItem="C60-OY-kaU" firstAttribute="top" secondItem="Z5G-Rq-3JK" secondAttribute="bottom" constant="8" id="bjE-ze-yau"/>
+                            <constraint firstItem="2KM-9u-9GP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="c47-OP-HqR"/>
                             <constraint firstAttribute="trailing" secondItem="Z5G-Rq-3JK" secondAttribute="trailing" constant="16" id="ika-dn-eFW"/>
+                            <constraint firstAttribute="trailing" secondItem="Lux-UB-8df" secondAttribute="trailing" constant="16" id="k4b-U2-SLd"/>
                             <constraint firstAttribute="trailing" secondItem="01Z-ax-5Bw" secondAttribute="trailing" constant="16" id="q6D-ta-2UP"/>
+                            <constraint firstItem="Lux-UB-8df" firstAttribute="top" secondItem="C60-OY-kaU" secondAttribute="bottom" constant="18" id="sc6-9U-9U5"/>
                             <constraint firstItem="3ed-Eh-GMz" firstAttribute="top" secondItem="jQN-g0-iGO" secondAttribute="bottom" constant="17" id="tYI-AQ-afW"/>
                             <constraint firstItem="jQN-g0-iGO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="21" id="unP-N0-0xR"/>
                             <constraint firstItem="0eS-ha-xwq" firstAttribute="top" secondItem="3ed-Eh-GMz" secondAttribute="bottom" constant="18" id="vIV-dE-H04"/>
                             <constraint firstAttribute="centerX" secondItem="IME-6U-vvU" secondAttribute="centerX" id="wSp-yP-29m"/>
+                            <constraint firstAttribute="centerX" secondItem="C60-OY-kaU" secondAttribute="centerX" id="xWz-A0-MkN"/>
                             <constraint firstAttribute="trailing" secondItem="yzV-Zt-KhF" secondAttribute="trailing" constant="16" id="yaN-1J-AG2"/>
+                            <constraint firstAttribute="centerX" secondItem="CtZ-IG-td2" secondAttribute="centerX" id="zGg-uJ-259"/>
                         </constraints>
                         <connections>
                             <action selector="backgroundTap:" destination="vXZ-lx-hvc" eventType="touchDown" id="ta0-P4-SiV"/>
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="doSomethingButton" destination="CtZ-IG-td2" id="Ygn-g6-bdt"/>
+                        <outlet property="leftSwitch" destination="2KM-9u-9GP" id="3r2-zl-VPe"/>
                         <outlet property="nameField" destination="yzV-Zt-KhF" id="EQU-xp-bIE"/>
                         <outlet property="numberField" destination="01Z-ax-5Bw" id="VDD-cU-ib9"/>
+                        <outlet property="rightSwitch" destination="Lux-UB-8df" id="JDf-aY-K7b"/>
                         <outlet property="sliderLabel" destination="0eS-ha-xwq" id="L1B-rg-c98"/>
                     </connections>
                 </viewController>
@@ -108,6 +158,8 @@
     </scenes>
     <resources>
         <image name="apress_logo" width="172" height="80"/>
+        <image name="blueButton" width="29" height="37"/>
+        <image name="whiteButton" width="29" height="38"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

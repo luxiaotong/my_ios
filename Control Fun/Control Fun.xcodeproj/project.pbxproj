@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B459B5471B96FD5000040227 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B459B5461B96FD5000040227 /* Image.xcassets */; };
 		B4833A9A1B9400E6007BCC3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4833A991B9400E6007BCC3C /* main.m */; };
 		B4833A9D1B9400E6007BCC3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4833A9C1B9400E6007BCC3C /* AppDelegate.m */; };
 		B4833AA01B9400E6007BCC3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4833A9F1B9400E6007BCC3C /* ViewController.m */; };
 		B4833AA31B9400E6007BCC3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4833AA11B9400E6007BCC3C /* Main.storyboard */; };
 		B4833AA81B9400E6007BCC3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4833AA61B9400E6007BCC3C /* LaunchScreen.xib */; };
 		B4833AB41B9400E6007BCC3C /* Control_FunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4833AB31B9400E6007BCC3C /* Control_FunTests.m */; };
-		B4833AC21B9403EB007BCC3C /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4833AC11B9403EB007BCC3C /* Image.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B459B5461B96FD5000040227 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		B4833A941B9400E5007BCC3C /* Control Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Control Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4833A981B9400E6007BCC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4833A991B9400E6007BCC3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		B4833AAD1B9400E6007BCC3C /* Control FunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Control FunTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4833AB21B9400E6007BCC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4833AB31B9400E6007BCC3C /* Control_FunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Control_FunTests.m; sourceTree = "<group>"; };
-		B4833AC11B9403EB007BCC3C /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				B4833A9F1B9400E6007BCC3C /* ViewController.m */,
 				B4833AA11B9400E6007BCC3C /* Main.storyboard */,
 				B4833AA61B9400E6007BCC3C /* LaunchScreen.xib */,
-				B4833AC11B9403EB007BCC3C /* Image.xcassets */,
+				B459B5461B96FD5000040227 /* Image.xcassets */,
 				B4833A971B9400E5007BCC3C /* Supporting Files */,
 			);
 			path = "Control Fun";
@@ -200,8 +200,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4833AC21B9403EB007BCC3C /* Image.xcassets in Resources */,
 				B4833AA31B9400E6007BCC3C /* Main.storyboard in Resources */,
+				B459B5471B96FD5000040227 /* Image.xcassets in Resources */,
 				B4833AA81B9400E6007BCC3C /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

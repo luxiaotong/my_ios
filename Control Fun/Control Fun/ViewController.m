@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *numberField;
 @property (nonatomic, retain) UIButton *doneInKeyboardButton;
 @property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *rightSwitch;
+@property (weak, nonatomic) IBOutlet UIButton *doSomethingButton;
 
 @end
 
@@ -154,4 +157,31 @@
     long progress = lroundf(sender.value);
     self.sliderLabel.text = [NSString stringWithFormat:@"%ld", progress];
 }
+
+#pragma mark - switches
+- (IBAction)switchChanged:(UISwitch *)sender {
+    BOOL isOn = sender.isOn;
+    [self.leftSwitch setOn:isOn animated:YES];
+    [self.rightSwitch setOn:isOn animated:YES];
+}
+
+#pragma mark - segment
+- (IBAction)toggleControls:(UISegmentedControl *)sender {
+    if ( sender.selectedSegmentIndex == 0 ) {
+        self.leftSwitch.hidden = NO;
+        self.rightSwitch.hidden = NO;
+        self.doSomethingButton.hidden = YES;
+    } else {
+        self.leftSwitch.hidden = YES;
+        self.rightSwitch.hidden = YES;
+        self.doSomethingButton.hidden = NO;
+    }
+}
+
+#pragma mark - button
+- (IBAction)buttonPressed:(UIButton *)sender {
+    
+}
+
+
 @end
