@@ -46,7 +46,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"doubleCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = @"aaaaa";
+    cell.textLabel.text = @"aaaaaaaa";
     
     if ( indexPath.row == 1) {
         cell.backgroundColor = [UIColor lightGrayColor];
