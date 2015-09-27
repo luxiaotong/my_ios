@@ -7,6 +7,10 @@
 //
 
 #import "LXTDoubleCellTableViewController.h"
+#import "LXTFirstRowTableViewCell.h"
+#import "LXTSecondRowTableViewCell.h"
+#import "LXTThirdRowTableViewCell.h"
+#import "LXTFourthRowTableViewCell.h"
 
 @interface LXTDoubleCellTableViewController ()
 
@@ -22,6 +26,12 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerClass:[LXTFirstRowTableViewCell class] forCellReuseIdentifier:@"firstRow"];
+    [self.tableView registerClass:[LXTSecondRowTableViewCell class] forCellReuseIdentifier:@"secondRow"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"LXTThirdRowTableViewCell" bundle:nil]
+         forCellReuseIdentifier:@"thirdRow"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"LXTFourthRowTableViewCell" bundle:nil]
+         forCellReuseIdentifier:@"fourthRow"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +42,30 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 10;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if ( section % 2 == 1 ) {
         return 1;
     }
-    return 2;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"doubleCell" forIndexPath:indexPath];
-    
     // Configure the cell...
-    cell.textLabel.text = @"aaaaaaaa";
     
-    if ( indexPath.row == 1) {
-        cell.backgroundColor = [UIColor lightGrayColor];
+    //cell.textLabel.text = @"aaaaaaaa";
+    
+    UITableViewCell *cell = nil;
+    if ( indexPath.row == 0 ) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"firstRow"];
+    } else if ( indexPath.row == 1 ) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"secondRow"];
+    } else if ( indexPath.row == 2 ) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"thirdRow"];
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"fourthRow"];
     }
     
     return cell;

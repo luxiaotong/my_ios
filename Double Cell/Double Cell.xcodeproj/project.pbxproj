@@ -16,6 +16,12 @@
 		B4146C071BAD01D3005DD2D6 /* Double_CellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4146C061BAD01D3005DD2D6 /* Double_CellTests.m */; };
 		B4146C121BAD01D3005DD2D6 /* Double_CellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4146C111BAD01D3005DD2D6 /* Double_CellUITests.m */; };
 		B4146C211BAD0426005DD2D6 /* LXTDoubleCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4146C201BAD0426005DD2D6 /* LXTDoubleCellTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B4F39F4E1BB82B570020C126 /* LXTFirstRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F39F4D1BB82B570020C126 /* LXTFirstRowTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B4F39F511BB82B780020C126 /* LXTSecondRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F39F501BB82B780020C126 /* LXTSecondRowTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B4F39F5A1BB839600020C126 /* LXTThirdRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F39F581BB839600020C126 /* LXTThirdRowTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B4F39F5B1BB839600020C126 /* LXTThirdRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F39F591BB839600020C126 /* LXTThirdRowTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B4F39F641BB83AA00020C126 /* LXTFourthRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F39F621BB83AA00020C126 /* LXTFourthRowTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B4F39F651BB83AA00020C126 /* LXTFourthRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F39F631BB83AA00020C126 /* LXTFourthRowTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,16 @@
 		B4146C131BAD01D3005DD2D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4146C1F1BAD0426005DD2D6 /* LXTDoubleCellTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTDoubleCellTableViewController.h; sourceTree = "<group>"; };
 		B4146C201BAD0426005DD2D6 /* LXTDoubleCellTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTDoubleCellTableViewController.m; sourceTree = "<group>"; };
+		B4F39F4C1BB82B570020C126 /* LXTFirstRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXTFirstRowTableViewCell.h; path = ../LXTFirstRowTableViewCell.h; sourceTree = "<group>"; };
+		B4F39F4D1BB82B570020C126 /* LXTFirstRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LXTFirstRowTableViewCell.m; path = ../LXTFirstRowTableViewCell.m; sourceTree = "<group>"; };
+		B4F39F4F1BB82B780020C126 /* LXTSecondRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTSecondRowTableViewCell.h; sourceTree = "<group>"; };
+		B4F39F501BB82B780020C126 /* LXTSecondRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTSecondRowTableViewCell.m; sourceTree = "<group>"; };
+		B4F39F571BB839600020C126 /* LXTThirdRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LXTThirdRowTableViewCell.h; path = ../LXTThirdRowTableViewCell.h; sourceTree = "<group>"; };
+		B4F39F581BB839600020C126 /* LXTThirdRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LXTThirdRowTableViewCell.m; path = ../LXTThirdRowTableViewCell.m; sourceTree = "<group>"; };
+		B4F39F591BB839600020C126 /* LXTThirdRowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LXTThirdRowTableViewCell.xib; path = ../LXTThirdRowTableViewCell.xib; sourceTree = "<group>"; };
+		B4F39F611BB83AA00020C126 /* LXTFourthRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTFourthRowTableViewCell.h; sourceTree = "<group>"; };
+		B4F39F621BB83AA00020C126 /* LXTFourthRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTFourthRowTableViewCell.m; sourceTree = "<group>"; };
+		B4F39F631BB83AA00020C126 /* LXTFourthRowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXTFourthRowTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +127,16 @@
 				B4146BF51BAD01D3005DD2D6 /* Main.storyboard */,
 				B4146C1F1BAD0426005DD2D6 /* LXTDoubleCellTableViewController.h */,
 				B4146C201BAD0426005DD2D6 /* LXTDoubleCellTableViewController.m */,
+				B4F39F4C1BB82B570020C126 /* LXTFirstRowTableViewCell.h */,
+				B4F39F4D1BB82B570020C126 /* LXTFirstRowTableViewCell.m */,
+				B4F39F4F1BB82B780020C126 /* LXTSecondRowTableViewCell.h */,
+				B4F39F501BB82B780020C126 /* LXTSecondRowTableViewCell.m */,
+				B4F39F571BB839600020C126 /* LXTThirdRowTableViewCell.h */,
+				B4F39F581BB839600020C126 /* LXTThirdRowTableViewCell.m */,
+				B4F39F591BB839600020C126 /* LXTThirdRowTableViewCell.xib */,
+				B4F39F611BB83AA00020C126 /* LXTFourthRowTableViewCell.h */,
+				B4F39F621BB83AA00020C126 /* LXTFourthRowTableViewCell.m */,
+				B4F39F631BB83AA00020C126 /* LXTFourthRowTableViewCell.xib */,
 				B4146BF81BAD01D3005DD2D6 /* Assets.xcassets */,
 				B4146BFA1BAD01D3005DD2D6 /* LaunchScreen.storyboard */,
 				B4146BFD1BAD01D3005DD2D6 /* Info.plist */,
@@ -250,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4146BFC1BAD01D3005DD2D6 /* LaunchScreen.storyboard in Resources */,
+				B4F39F651BB83AA00020C126 /* LXTFourthRowTableViewCell.xib in Resources */,
 				B4146BF91BAD01D3005DD2D6 /* Assets.xcassets in Resources */,
 				B4146BF71BAD01D3005DD2D6 /* Main.storyboard in Resources */,
+				B4F39F5B1BB839600020C126 /* LXTThirdRowTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +305,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4146BF41BAD01D3005DD2D6 /* ViewController.m in Sources */,
+				B4F39F641BB83AA00020C126 /* LXTFourthRowTableViewCell.m in Sources */,
 				B4146BF11BAD01D3005DD2D6 /* AppDelegate.m in Sources */,
+				B4F39F5A1BB839600020C126 /* LXTThirdRowTableViewCell.m in Sources */,
 				B4146BEE1BAD01D3005DD2D6 /* main.m in Sources */,
+				B4F39F511BB82B780020C126 /* LXTSecondRowTableViewCell.m in Sources */,
+				B4F39F4E1BB82B570020C126 /* LXTFirstRowTableViewCell.m in Sources */,
 				B4146C211BAD0426005DD2D6 /* LXTDoubleCellTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +535,7 @@
 				B4146C181BAD01D3005DD2D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4146C191BAD01D3005DD2D6 /* Build configuration list for PBXNativeTarget "Double CellTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +544,7 @@
 				B4146C1B1BAD01D3005DD2D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4146C1C1BAD01D3005DD2D6 /* Build configuration list for PBXNativeTarget "Double CellUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +553,7 @@
 				B4146C1E1BAD01D3005DD2D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
