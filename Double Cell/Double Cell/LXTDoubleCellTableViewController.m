@@ -46,9 +46,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if ( section % 2 == 1 ) {
-        return 1;
-    }
     return 4;
 }
 
@@ -68,6 +65,8 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"fourthRow"];
     }
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     return cell;
 }
 
@@ -82,6 +81,14 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 10;
 }
+
+/*
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    // To "clear" the footer view
+    //return [UIView new];
+
+}*/
 
 
 /*
