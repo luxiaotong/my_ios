@@ -24,15 +24,17 @@
     CGRect basketBottomFrame = self.basketBottom.frame;
     basketBottomFrame.origin.y = self.view.bounds.size.height;
     
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:2.0];
-    [UIView setAnimationDelay:2.0];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    
-    self.basketTop.frame = basketTopFrame;
-    self.basketBottom.frame = basketBottomFrame;
-    
-    [UIView commitAnimations];
+    [UIView animateWithDuration:5.0
+                          delay:2.0
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         self.basketTop.frame = basketTopFrame;
+                         self.basketBottom.frame = basketBottomFrame;
+                     }
+                     completion:^(BOOL finished){
+                         
+                     }
+     ];
 }
 
 - (void)didReceiveMemoryWarning {
