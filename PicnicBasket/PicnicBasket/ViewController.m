@@ -11,6 +11,8 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *basketTop;
 @property (weak, nonatomic) IBOutlet UIImageView *basketBottom;
+@property (weak, nonatomic) IBOutlet UIImageView *fabricTop;
+@property (weak, nonatomic) IBOutlet UIImageView *fabricBottom;
 
 @end
 
@@ -24,6 +26,11 @@
     CGRect basketBottomFrame = self.basketBottom.frame;
     basketBottomFrame.origin.y = self.view.bounds.size.height;
     
+    CGRect fabricTopFrame = self.fabricTop.frame;
+    fabricTopFrame.origin.y = -self.view.bounds.size.height;
+    CGRect fabricBottomFrame = self.fabricBottom.frame;
+    fabricBottomFrame.origin.y = self.view.bounds.size.height;
+    
     [UIView animateWithDuration:5.0
                           delay:2.0
                         options:UIViewAnimationOptionCurveEaseOut
@@ -32,9 +39,16 @@
                          self.basketBottom.frame = basketBottomFrame;
                      }
                      completion:^(BOOL finished){
-                         
-                     }
-     ];
+                         [UIView animateWithDuration:5.0
+                                               delay:2.0
+                                             options:UIViewAnimationOptionCurveEaseOut
+                                          animations:^{
+                                              self.fabricTop.frame = fabricTopFrame;
+                                              self.fabricBottom.frame = fabricBottomFrame;
+                                          }completion:^(BOOL finished){
+                                              
+                                          }];
+                     }];
 }
 
 - (void)didReceiveMemoryWarning {

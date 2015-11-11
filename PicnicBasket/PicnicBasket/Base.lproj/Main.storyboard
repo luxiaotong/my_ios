@@ -13,6 +13,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fabric_top.png" id="FlA-Ow-epr" userLabel="Fabric Top">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fabric_bottom.png" id="IEL-Ke-NCc" userLabel="Fabric Bottom">
+                                <rect key="frame" x="0.0" y="292" width="320" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="door_top.png" id="tY5-dE-J1L">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -30,15 +40,19 @@
                     <connections>
                         <outlet property="basketBottom" destination="yaa-sC-tjy" id="XXy-8W-fcV"/>
                         <outlet property="basketTop" destination="tY5-dE-J1L" id="BW5-SS-F3Y"/>
+                        <outlet property="fabricBottom" destination="IEL-Ke-NCc" id="8eD-TM-kdz"/>
+                        <outlet property="fabricTop" destination="FlA-Ow-epr" id="igo-bA-YWk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202" y="319"/>
+            <point key="canvasLocation" x="347" y="318"/>
         </scene>
     </scenes>
     <resources>
         <image name="door_bottom.png" width="320" height="235"/>
         <image name="door_top.png" width="320" height="266"/>
+        <image name="fabric_bottom.png" width="320" height="235"/>
+        <image name="fabric_top.png" width="320" height="260"/>
     </resources>
 </document>
