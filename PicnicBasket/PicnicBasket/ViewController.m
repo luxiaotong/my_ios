@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *basketTop;
@@ -120,6 +121,13 @@
     if ( self.bugDead ) {
         return;
     }
+    
+    NSString *squishPath = [[NSBundle mainBundle]
+                            pathForResource:@"squish" ofType:@"caf"];
+    NSURL *squishURL = [NSURL fileURLWithPath:squishPath];
+    SystemSoundID squishSoundID;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)squishURL, &squishSoundID);
+    AudioServicesPlaySystemSound(squishSoundID);
     
     UITouch *touch = [touches anyObject];
     CGPoint touchLocation = [touch locationInView:self.view];
