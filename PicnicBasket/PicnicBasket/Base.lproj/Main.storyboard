@@ -13,6 +13,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plate_cheese.png" id="YXf-oV-Dym">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bug.png" id="gUk-GU-8vj">
+                                <rect key="frame" x="160" y="185" width="135" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fabric_top.png" id="FlA-Ow-epr" userLabel="Fabric Top">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,6 +50,7 @@
                     <connections>
                         <outlet property="basketBottom" destination="yaa-sC-tjy" id="XXy-8W-fcV"/>
                         <outlet property="basketTop" destination="tY5-dE-J1L" id="BW5-SS-F3Y"/>
+                        <outlet property="bug" destination="gUk-GU-8vj" id="lgD-pc-OdD"/>
                         <outlet property="fabricBottom" destination="IEL-Ke-NCc" id="8eD-TM-kdz"/>
                         <outlet property="fabricTop" destination="FlA-Ow-epr" id="igo-bA-YWk"/>
                     </connections>
@@ -50,9 +61,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bug.png" width="135" height="142"/>
         <image name="door_bottom.png" width="320" height="235"/>
         <image name="door_top.png" width="320" height="266"/>
         <image name="fabric_bottom.png" width="320" height="235"/>
         <image name="fabric_top.png" width="320" height="260"/>
+        <image name="plate_cheese.png" width="320" height="480"/>
     </resources>
 </document>
