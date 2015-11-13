@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Animation.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *movingButton;
 
 @end
 
@@ -22,6 +24,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)btnMoveTo:(UIButton *)sender {
+    CGPoint targetPoint = CGPointMake(sender.center.x - self.movingButton.frame.size.width/2,
+                                      sender.frame.origin.y - self.movingButton.frame.size.height);
+    [self.movingButton moveTo:targetPoint duration:1.0 option:0];
 }
 
 @end
