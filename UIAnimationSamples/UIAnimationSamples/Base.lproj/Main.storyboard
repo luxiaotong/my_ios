@@ -65,6 +65,26 @@
                                     <action selector="btnDownUnder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjo-uW-6Kk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krx-ZR-ht0">
+                                <rect key="frame" x="137" y="178" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Picker">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnZoom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GZ-fv-iq9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph1-fR-eyz">
+                                <rect key="frame" x="144" y="373" width="33" height="30"/>
+                                <animations/>
+                                <state key="normal" title="HUD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHUD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdd-s9-2ER"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.20395698349999999" green="0.4817521924" blue="0.71711253159999999" alpha="1" colorSpace="calibratedRGB"/>

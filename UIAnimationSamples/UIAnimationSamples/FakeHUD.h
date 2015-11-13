@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FakeHUD.h
 //  UIAnimationSamples
 //
 //  Created by 逯晓瞳 on 15/11/13.
@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-    NSMutableArray *curvesList;
-    int	selectedCurveIndex;
-    UIView *pickerView;
-}
+@interface FakeHUD : UIView
 
+- (IBAction)btnStop;
++ (id) newFakeHUD;
 
 @end
-
