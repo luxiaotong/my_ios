@@ -30,5 +30,8 @@
                                       sender.frame.origin.y - self.movingButton.frame.size.height);
     [self.movingButton moveTo:targetPoint duration:1.0 option:0];
 }
+- (IBAction)btnDownUnder:(UIButton *)sender {
+    [self.movingButton downUnder];
+}
 
 @end

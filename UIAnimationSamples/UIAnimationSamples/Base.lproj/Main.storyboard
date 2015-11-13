@@ -61,6 +61,9 @@
                                 <rect key="frame" x="135" y="259" width="50" height="50"/>
                                 <animations/>
                                 <state key="normal" title="Button" image="arrow1.png"/>
+                                <connections>
+                                    <action selector="btnDownUnder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjo-uW-6Kk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

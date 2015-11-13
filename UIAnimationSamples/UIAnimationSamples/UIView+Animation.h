@@ -10,6 +10,6 @@
 
 @interface UIView (Animation)
 
-- (void) moveTo:(CGPoint)destination duration:(float)secs option:(UIViewAnimationOptions)option;
-
+- (void)moveTo:(CGPoint)destination duration:(float)secs option:(UIViewAnimationOptions)option;
+- (void)downUnder;
 @end
