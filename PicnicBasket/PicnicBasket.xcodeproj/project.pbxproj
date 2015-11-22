@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4BB8CE61BF2EEBB00DDFA80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB8CE51BF2EEBB00DDFA80 /* main.m */; };
+		B4BB8CE91BF2EEBB00DDFA80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB8CE81BF2EEBB00DDFA80 /* AppDelegate.m */; };
+		B4BB8CEC1BF2EEBB00DDFA80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BB8CEB1BF2EEBB00DDFA80 /* ViewController.m */; };
+		B4BB8CEF1BF2EEBB00DDFA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8CED1BF2EEBB00DDFA80 /* Main.storyboard */; };
+		B4BB8CF11BF2EEBB00DDFA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8CF01BF2EEBB00DDFA80 /* Assets.xcassets */; };
+		B4BB8CF41BF2EEBB00DDFA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8CF21BF2EEBB00DDFA80 /* LaunchScreen.storyboard */; };
+		B4BB8D031BF2EF9F00DDFA80 /* bug.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8CFC1BF2EF9F00DDFA80 /* bug.png */; };
+		B4BB8D041BF2EF9F00DDFA80 /* door_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8CFD1BF2EF9F00DDFA80 /* door_bottom.png */; };
+		B4BB8D051BF2EF9F00DDFA80 /* door_top.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8CFE1BF2EF9F00DDFA80 /* door_top.png */; };
+		B4BB8D061BF2EF9F00DDFA80 /* fabric_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8CFF1BF2EF9F00DDFA80 /* fabric_bottom.png */; };
+		B4BB8D071BF2EF9F00DDFA80 /* fabric_top.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8D001BF2EF9F00DDFA80 /* fabric_top.png */; };
+		B4BB8D081BF2EF9F00DDFA80 /* plate_cheese.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8D011BF2EF9F00DDFA80 /* plate_cheese.png */; };
+		B4BB8D091BF2EF9F00DDFA80 /* squish.caf in Resources */ = {isa = PBXBuildFile; fileRef = B4BB8D021BF2EF9F00DDFA80 /* squish.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B4BB8CE11BF2EEBB00DDFA80 /* PicnicBasket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicnicBasket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BB8CE51BF2EEBB00DDFA80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4BB8CE71BF2EEBB00DDFA80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B4BB8CE81BF2EEBB00DDFA80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4BB8CEA1BF2EEBB00DDFA80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B4BB8CEB1BF2EEBB00DDFA80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4BB8CEE1BF2EEBB00DDFA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4BB8CF01BF2EEBB00DDFA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4BB8CF31BF2EEBB00DDFA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4BB8CF51BF2EEBB00DDFA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4BB8CFC1BF2EF9F00DDFA80 /* bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bug.png; sourceTree = "<group>"; };
+		B4BB8CFD1BF2EF9F00DDFA80 /* door_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door_bottom.png; sourceTree = "<group>"; };
+		B4BB8CFE1BF2EF9F00DDFA80 /* door_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door_top.png; sourceTree = "<group>"; };
+		B4BB8CFF1BF2EF9F00DDFA80 /* fabric_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fabric_bottom.png; sourceTree = "<group>"; };
+		B4BB8D001BF2EF9F00DDFA80 /* fabric_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fabric_top.png; sourceTree = "<group>"; };
+		B4BB8D011BF2EF9F00DDFA80 /* plate_cheese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plate_cheese.png; sourceTree = "<group>"; };
+		B4BB8D021BF2EF9F00DDFA80 /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4BB8CDE1BF2EEBB00DDFA80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4BB8CD81BF2EEBB00DDFA80 = {
+			isa = PBXGroup;
+			children = (
+				B4BB8CE31BF2EEBB00DDFA80 /* PicnicBasket */,
+				B4BB8CE21BF2EEBB00DDFA80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4BB8CE21BF2EEBB00DDFA80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4BB8CE11BF2EEBB00DDFA80 /* PicnicBasket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4BB8CE31BF2EEBB00DDFA80 /* PicnicBasket */ = {
+			isa = PBXGroup;
+			children = (
+				B4BB8CE71BF2EEBB00DDFA80 /* AppDelegate.h */,
+				B4BB8CE81BF2EEBB00DDFA80 /* AppDelegate.m */,
+				B4BB8CEA1BF2EEBB00DDFA80 /* ViewController.h */,
+				B4BB8CEB1BF2EEBB00DDFA80 /* ViewController.m */,
+				B4BB8CED1BF2EEBB00DDFA80 /* Main.storyboard */,
+				B4BB8CF01BF2EEBB00DDFA80 /* Assets.xcassets */,
+				B4BB8CF21BF2EEBB00DDFA80 /* LaunchScreen.storyboard */,
+				B4BB8CF51BF2EEBB00DDFA80 /* Info.plist */,
+				B4BB8CFB1BF2EF5C00DDFA80 /* Source Files */,
+				B4BB8CE41BF2EEBB00DDFA80 /* Supporting Files */,
+			);
+			path = PicnicBasket;
+			sourceTree = "<group>";
+		};
+		B4BB8CE41BF2EEBB00DDFA80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4BB8CE51BF2EEBB00DDFA80 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4BB8CFB1BF2EF5C00DDFA80 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4BB8CFC1BF2EF9F00DDFA80 /* bug.png */,
+				B4BB8CFD1BF2EF9F00DDFA80 /* door_bottom.png */,
+				B4BB8CFE1BF2EF9F00DDFA80 /* door_top.png */,
+				B4BB8CFF1BF2EF9F00DDFA80 /* fabric_bottom.png */,
+				B4BB8D001BF2EF9F00DDFA80 /* fabric_top.png */,
+				B4BB8D011BF2EF9F00DDFA80 /* plate_cheese.png */,
+				B4BB8D021BF2EF9F00DDFA80 /* squish.caf */,
+			);
+			name = "Source Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4BB8CE01BF2EEBB00DDFA80 /* PicnicBasket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4BB8CF81BF2EEBB00DDFA80 /* Build configuration list for PBXNativeTarget "PicnicBasket" */;
+			buildPhases = (
+				B4BB8CDD1BF2EEBB00DDFA80 /* Sources */,
+				B4BB8CDE1BF2EEBB00DDFA80 /* Frameworks */,
+				B4BB8CDF1BF2EEBB00DDFA80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicnicBasket;
+			productName = PicnicBasket;
+			productReference = B4BB8CE11BF2EEBB00DDFA80 /* PicnicBasket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4BB8CD91BF2EEBB00DDFA80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LXT;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "逯晓瞳";
+				TargetAttributes = {
+					B4BB8CE01BF2EEBB00DDFA80 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = YZR9Y8VCGW;
+					};
+				};
+			};
+			buildConfigurationList = B4BB8CDC1BF2EEBB00DDFA80 /* Build configuration list for PBXProject "PicnicBasket" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4BB8CD81BF2EEBB00DDFA80;
+			productRefGroup = B4BB8CE21BF2EEBB00DDFA80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4BB8CE01BF2EEBB00DDFA80 /* PicnicBasket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4BB8CDF1BF2EEBB00DDFA80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BB8D061BF2EF9F00DDFA80 /* fabric_bottom.png in Resources */,
+				B4BB8D031BF2EF9F00DDFA80 /* bug.png in Resources */,
+				B4BB8D071BF2EF9F00DDFA80 /* fabric_top.png in Resources */,
+				B4BB8D081BF2EF9F00DDFA80 /* plate_cheese.png in Resources */,
+				B4BB8D041BF2EF9F00DDFA80 /* door_bottom.png in Resources */,
+				B4BB8CF41BF2EEBB00DDFA80 /* LaunchScreen.storyboard in Resources */,
+				B4BB8D051BF2EF9F00DDFA80 /* door_top.png in Resources */,
+				B4BB8D091BF2EF9F00DDFA80 /* squish.caf in Resources */,
+				B4BB8CF11BF2EEBB00DDFA80 /* Assets.xcassets in Resources */,
+				B4BB8CEF1BF2EEBB00DDFA80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4BB8CDD1BF2EEBB00DDFA80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BB8CEC1BF2EEBB00DDFA80 /* ViewController.m in Sources */,
+				B4BB8CE91BF2EEBB00DDFA80 /* AppDelegate.m in Sources */,
+				B4BB8CE61BF2EEBB00DDFA80 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4BB8CED1BF2EEBB00DDFA80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4BB8CEE1BF2EEBB00DDFA80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4BB8CF21BF2EEBB00DDFA80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4BB8CF31BF2EEBB00DDFA80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4BB8CF61BF2EEBB00DDFA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4BB8CF71BF2EEBB00DDFA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4BB8CF91BF2EEBB00DDFA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PicnicBasket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Luxiaotong.PicnicBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B4BB8CFA1BF2EEBB00DDFA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PicnicBasket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Luxiaotong.PicnicBasket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4BB8CDC1BF2EEBB00DDFA80 /* Build configuration list for PBXProject "PicnicBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BB8CF61BF2EEBB00DDFA80 /* Debug */,
+				B4BB8CF71BF2EEBB00DDFA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4BB8CF81BF2EEBB00DDFA80 /* Build configuration list for PBXNativeTarget "PicnicBasket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BB8CF91BF2EEBB00DDFA80 /* Debug */,
+				B4BB8CFA1BF2EEBB00DDFA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4BB8CD91BF2EEBB00DDFA80 /* Project object */;
+}
