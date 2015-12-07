@@ -20,6 +20,7 @@
 		B4AED52C1BF5CE41008DAC23 /* FakeHUD.png in Resources */ = {isa = PBXBuildFile; fileRef = B4AED52B1BF5CE41008DAC23 /* FakeHUD.png */; };
 		B4AED52F1BF5CE56008DAC23 /* FakeHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AED52E1BF5CE56008DAC23 /* FakeHUD.m */; };
 		B4AED5311BF5CE6F008DAC23 /* FakeHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4AED5301BF5CE6F008DAC23 /* FakeHUD.xib */; };
+		E15188CA1C0871DA0068733E /* UIViewController+Swizzled.m in Sources */ = {isa = PBXBuildFile; fileRef = E15188C91C0871DA0068733E /* UIViewController+Swizzled.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		B4AED52D1BF5CE56008DAC23 /* FakeHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeHUD.h; sourceTree = "<group>"; };
 		B4AED52E1BF5CE56008DAC23 /* FakeHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeHUD.m; sourceTree = "<group>"; };
 		B4AED5301BF5CE6F008DAC23 /* FakeHUD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FakeHUD.xib; sourceTree = "<group>"; };
+		E15188C81C0871DA0068733E /* UIViewController+Swizzled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzled.h"; sourceTree = "<group>"; };
+		E15188C91C0871DA0068733E /* UIViewController+Swizzled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzled.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				B4AED51B1BF58C76008DAC23 /* Info.plist */,
 				B4AED5211BF58E46008DAC23 /* arrow1.png */,
 				B4AED52B1BF5CE41008DAC23 /* FakeHUD.png */,
+				E15188C81C0871DA0068733E /* UIViewController+Swizzled.h */,
+				E15188C91C0871DA0068733E /* UIViewController+Swizzled.m */,
 				B4AED50A1BF58C76008DAC23 /* Supporting Files */,
 			);
 			path = UIAnimationSamples;
@@ -186,6 +191,7 @@
 				B4AED50F1BF58C76008DAC23 /* AppDelegate.m in Sources */,
 				B4AED5281BF5BA2E008DAC23 /* AnimationCurvePicker.m in Sources */,
 				B4AED52F1BF5CE56008DAC23 /* FakeHUD.m in Sources */,
+				E15188CA1C0871DA0068733E /* UIViewController+Swizzled.m in Sources */,
 				B4AED50C1BF58C76008DAC23 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +339,7 @@
 				B4AED5201BF58C76008DAC23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
