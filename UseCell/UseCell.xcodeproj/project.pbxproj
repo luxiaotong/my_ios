@@ -14,6 +14,8 @@
 		E186A6CD1C214C48007D0969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E186A6CC1C214C48007D0969 /* Assets.xcassets */; };
 		E186A6D01C214C48007D0969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E186A6CE1C214C48007D0969 /* LaunchScreen.storyboard */; };
 		E186A6D81C2165AD007D0969 /* 伊斯坦堡.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E186A6D71C2165AD007D0969 /* 伊斯坦堡.jpeg */; };
+		E186A6EE1C2184BA007D0969 /* UCSelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E186A6EC1C2184BA007D0969 /* UCSelfTableViewCell.m */; };
+		E186A6EF1C2184BA007D0969 /* UCSelfTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E186A6ED1C2184BA007D0969 /* UCSelfTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		E186A6CF1C214C48007D0969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E186A6D11C214C48007D0969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E186A6D71C2165AD007D0969 /* 伊斯坦堡.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "伊斯坦堡.jpeg"; sourceTree = "<group>"; };
+		E186A6EB1C2184BA007D0969 /* UCSelfTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSelfTableViewCell.h; sourceTree = "<group>"; };
+		E186A6EC1C2184BA007D0969 /* UCSelfTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSelfTableViewCell.m; sourceTree = "<group>"; };
+		E186A6ED1C2184BA007D0969 /* UCSelfTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCSelfTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,9 @@
 				E186A6C41C214C48007D0969 /* AppDelegate.m */,
 				E186A6C61C214C48007D0969 /* ViewController.h */,
 				E186A6C71C214C48007D0969 /* ViewController.m */,
+				E186A6EB1C2184BA007D0969 /* UCSelfTableViewCell.h */,
+				E186A6EC1C2184BA007D0969 /* UCSelfTableViewCell.m */,
+				E186A6ED1C2184BA007D0969 /* UCSelfTableViewCell.xib */,
 				E186A6C91C214C48007D0969 /* Main.storyboard */,
 				E186A6CC1C214C48007D0969 /* Assets.xcassets */,
 				E186A6CE1C214C48007D0969 /* LaunchScreen.storyboard */,
@@ -139,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E186A6EF1C2184BA007D0969 /* UCSelfTableViewCell.xib in Resources */,
 				E186A6D01C214C48007D0969 /* LaunchScreen.storyboard in Resources */,
 				E186A6D81C2165AD007D0969 /* 伊斯坦堡.jpeg in Resources */,
 				E186A6CD1C214C48007D0969 /* Assets.xcassets in Resources */,
@@ -154,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E186A6C81C214C48007D0969 /* ViewController.m in Sources */,
+				E186A6EE1C2184BA007D0969 /* UCSelfTableViewCell.m in Sources */,
 				E186A6C51C214C48007D0969 /* AppDelegate.m in Sources */,
 				E186A6C21C214C47007D0969 /* main.m in Sources */,
 			);

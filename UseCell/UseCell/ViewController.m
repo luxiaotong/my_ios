@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UCSelfTableViewCell.h"
 
 @interface ViewController ()
 
@@ -61,13 +62,23 @@
         cell.textLabel.text = @"subtitle";
         cell.detailTextLabel.text = @"subtitle";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+    } else if ( indexPath.row == 4 ) {
+        
+        [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTableViewCell"
+                                                          bundle:nil]
+                    forCellReuseIdentifier:@"UCSelfTableViewCell"];
+        UCSelfTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"UCSelfTableViewCell"];
+        cell.labelLeft.text = @"selfLeft";
+        cell.labelMiddle.text = @"selfMiddle";
+        return cell;
     }
     
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
