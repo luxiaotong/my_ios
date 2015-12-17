@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTableViewCell" bundle:nil]forCellReuseIdentifier:@"UCSelfTableViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTryTableViewCell" bundle:nil] forCellReuseIdentifier:@"UCSelfTryTableViewCell"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,16 +34,14 @@
     
     if ( indexPath.row == 0 ) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                                       reuseIdentifier:@"UITableViewCell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
         cell.imageView.image = [UIImage imageNamed:@"伊斯坦堡.jpeg"];
         cell.textLabel.text = @"defalut";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
     } else if ( indexPath.row == 1 ) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
-                                                       reuseIdentifier:@"UITableViewCell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"UITableViewCell"];
         cell.imageView.image = [UIImage imageNamed:@"伊斯坦堡.jpeg"];
         cell.textLabel.text = @"value1";
         cell.detailTextLabel.text = @"value1";
@@ -48,8 +49,7 @@
     
     } else if ( indexPath.row == 2 ) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2
-                                                       reuseIdentifier:@"UITableViewCell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"UITableViewCell"];
 //        cell.imageView.image = [UIImage imageNamed:@"伊斯坦堡.jpeg"];
         cell.textLabel.text = @"value2";
         cell.detailTextLabel.text = @"value2";
@@ -57,8 +57,7 @@
         
     } else if ( indexPath.row == 3 ) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                                       reuseIdentifier:@"UITableViewCell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"UITableViewCell"];
         cell.imageView.image = [UIImage imageNamed:@"伊斯坦堡.jpeg"];
         cell.textLabel.text = @"subtitle";
         cell.detailTextLabel.text = @"subtitle";
@@ -66,19 +65,13 @@
         
     } else if ( indexPath.row == 4 ) {
         
-        [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTableViewCell"
-                                                          bundle:nil]
-                    forCellReuseIdentifier:@"UCSelfTableViewCell"];
         UCSelfTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"UCSelfTableViewCell"];
         cell.labelLeft.text = @"selfLeft";
-        cell.labelMiddle.text = @"selfMiddle";
+        cell.labelMiddle.text = @"selfoMiddle";
         return cell;
         
     } else if ( indexPath.row == 5 ) {
-        
-        [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTryTableViewCell"
-                                                          bundle:nil]
-                    forCellReuseIdentifier:@"UCSelfTryTableViewCell"];
+
         UCSelfTryTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"UCSelfTryTableViewCell"];
         cell.labelLeft.text = @"selfTryLeft";
         cell.labelRight.text = @"selfTryRigth";
@@ -93,7 +86,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 40;
 }
 
 @end
