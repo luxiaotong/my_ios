@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UCSelfTableViewCell.h"
+#import "UCSelfTryTableViewCell.h"
 
 @interface ViewController ()
 
@@ -72,13 +73,23 @@
         cell.labelLeft.text = @"selfLeft";
         cell.labelMiddle.text = @"selfMiddle";
         return cell;
+        
+    } else if ( indexPath.row == 5 ) {
+        
+        [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTryTableViewCell"
+                                                          bundle:nil]
+                    forCellReuseIdentifier:@"UCSelfTryTableViewCell"];
+        UCSelfTryTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"UCSelfTryTableViewCell"];
+        cell.labelLeft.text = @"selfTryLeft";
+        cell.labelRight.text = @"selfTryRigth";
+        return cell;
     }
     
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
