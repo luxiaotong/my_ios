@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation ViewController
@@ -19,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.tableView = [[UITableView alloc] init];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    [self.view addSubview:self.tableView];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTableViewCell" bundle:nil]forCellReuseIdentifier:@"UCSelfTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"UCSelfTryTableViewCell" bundle:nil] forCellReuseIdentifier:@"UCSelfTryTableViewCell"];
