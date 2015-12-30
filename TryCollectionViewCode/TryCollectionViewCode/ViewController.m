@@ -31,10 +31,14 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 320;
+    NSInteger numberOfCollection = ( indexPath.row + 1 ) * 3;
+    NSInteger rowsOfCollection = floor(numberOfCollection / 3);
+    
+    return rowsOfCollection * 100 + 5 * rowsOfCollection;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(CollectionTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    cell.collectionView.tag = ( indexPath.row + 1 ) * 3 - 1;
     cell.collectionView.delegate = self;
     cell.collectionView.dataSource = self;
     [cell.collectionView reloadData];
@@ -52,7 +56,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 3;
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -71,7 +75,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 9;
+    return collectionView.tag;
 }
 
 
