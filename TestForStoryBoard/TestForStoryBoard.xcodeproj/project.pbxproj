@@ -13,6 +13,7 @@
 		E17AB6A31C7DABC20017C3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17AB6A11C7DABC20017C3E9 /* Main.storyboard */; };
 		E17AB6A51C7DABC20017C3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17AB6A41C7DABC20017C3E9 /* Assets.xcassets */; };
 		E17AB6A81C7DABC20017C3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17AB6A61C7DABC20017C3E9 /* LaunchScreen.storyboard */; };
+		E17AB6DD1C86D7530017C3E9 /* TestForTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17AB6DC1C86D7530017C3E9 /* TestForTabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E17AB6A41C7DABC20017C3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17AB6A71C7DABC20017C3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E17AB6A91C7DABC20017C3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17AB6DC1C86D7530017C3E9 /* TestForTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestForTabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				E17AB6A11C7DABC20017C3E9 /* Main.storyboard */,
 				E17AB6A41C7DABC20017C3E9 /* Assets.xcassets */,
 				E17AB6A61C7DABC20017C3E9 /* LaunchScreen.storyboard */,
+				E17AB6DC1C86D7530017C3E9 /* TestForTabBar.storyboard */,
 				E17AB6A91C7DABC20017C3E9 /* Info.plist */,
 				E17AB6981C7DABC20017C3E9 /* Supporting Files */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				E17AB6A81C7DABC20017C3E9 /* LaunchScreen.storyboard in Resources */,
 				E17AB6A51C7DABC20017C3E9 /* Assets.xcassets in Resources */,
+				E17AB6DD1C86D7530017C3E9 /* TestForTabBar.storyboard in Resources */,
 				E17AB6A31C7DABC20017C3E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
