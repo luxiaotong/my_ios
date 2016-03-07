@@ -14,6 +14,7 @@
 		E17AB6A51C7DABC20017C3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17AB6A41C7DABC20017C3E9 /* Assets.xcassets */; };
 		E17AB6A81C7DABC20017C3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17AB6A61C7DABC20017C3E9 /* LaunchScreen.storyboard */; };
 		E17AB6DD1C86D7530017C3E9 /* TestForTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17AB6DC1C86D7530017C3E9 /* TestForTabBar.storyboard */; };
+		E17AB6E01C86E77D0017C3E9 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17AB6DF1C86E77D0017C3E9 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		E17AB6A71C7DABC20017C3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E17AB6A91C7DABC20017C3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E17AB6DC1C86D7530017C3E9 /* TestForTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestForTabBar.storyboard; sourceTree = "<group>"; };
+		E17AB6DE1C86E77D0017C3E9 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		E17AB6DF1C86E77D0017C3E9 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				E17AB6DC1C86D7530017C3E9 /* TestForTabBar.storyboard */,
 				E17AB6A91C7DABC20017C3E9 /* Info.plist */,
 				E17AB6981C7DABC20017C3E9 /* Supporting Files */,
+				E17AB6DE1C86E77D0017C3E9 /* TestViewController.h */,
+				E17AB6DF1C86E77D0017C3E9 /* TestViewController.m */,
 			);
 			path = TestForStoryBoard;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			files = (
 				E17AB6A01C7DABC20017C3E9 /* ViewController.m in Sources */,
 				E17AB69D1C7DABC20017C3E9 /* AppDelegate.m in Sources */,
+				E17AB6E01C86E77D0017C3E9 /* TestViewController.m in Sources */,
 				E17AB69A1C7DABC20017C3E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

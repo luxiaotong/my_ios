@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59O-ZC-gZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1521" y="-711"/>
+            <point key="canvasLocation" x="-1576" y="-711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Fpb-Nb-SW0">
@@ -35,40 +35,44 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9eQ-lD-Mtn">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="D7b-vc-i2J">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e2C-EW-IdN">
-                                <rect key="frame" x="233" y="7" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="CRG-pb-d7L">
                             <connections>
-                                <segue destination="2rU-hh-cD3" kind="push" id="yTM-fa-XoG"/>
+                                <segue destination="Rho-2N-weK" kind="push" id="mIM-6L-cZ6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCW-Zv-iEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="-711"/>
+            <point key="canvasLocation" x="-1178" y="-711"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="DTD-P0-68O">
+        <!--Test View Controller-->
+        <scene sceneID="ZAo-xR-D7N">
             <objects>
-                <viewController id="2rU-hh-cD3" sceneMemberID="viewController">
+                <viewController id="Rho-2N-weK" customClass="TestViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZEU-yM-4jg"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tpc-X9-XDp"/>
+                        <viewControllerLayoutGuide type="top" id="TGi-9F-4zf"/>
+                        <viewControllerLayoutGuide type="bottom" id="dif-Ei-4MH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5tT-ko-kRx">
+                    <view key="view" contentMode="scaleToFill" id="e5K-PI-L1V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVv-Qc-Ktg">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushToTestTabBar:" destination="Rho-2N-weK" eventType="touchUpInside" id="vcH-v6-xrs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="c3J-te-CKj"/>
+                    <navigationItem key="navigationItem" id="sYx-Ti-fyi"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mHV-Z5-vZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTv-ko-nF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-804" y="-709"/>
+            <point key="canvasLocation" x="-781" y="-711"/>
         </scene>
     </scenes>
 </document>
