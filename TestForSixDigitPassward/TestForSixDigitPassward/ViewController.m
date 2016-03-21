@@ -45,6 +45,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Move the cursor when input or delete
 - (BOOL)textField:(TFDigitTextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSArray *digitArr = @[_digit1, _digit2, _digit3, _digit4, _digit5, _digit6];
     NSInteger i = 0;
@@ -69,6 +70,7 @@
     return NO;
 }
 
+//Move the cursor when user select field.
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     NSArray *digitArr = @[_digit1, _digit2, _digit3, _digit4, _digit5, _digit6];
